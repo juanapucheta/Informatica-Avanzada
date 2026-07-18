@@ -1,0 +1,60 @@
+Considere el siguiente diagrama de clases, en donde una Mortero es un tipo especial de Armamento que se distingue del resto por su nombre.
+Codifique la clase tal que extienda de la clase Armamento, e implemente el constructor y el getter del campo nombre. 
+public class Mortero extends Armamento {    
+    private String nombre;
+    
+    /**
+     * Constructor de la clase Mortero.
+     * El nombre es el nombre de la clase.
+     */
+    public Mortero (Integer ataque) {
+        super(ataque);
+        nombre = "Mortero";
+    }
+    
+    public String getNombre() {
+        return nombre;
+    }
+}
+
+///////////////////////////////////////
+Considere el siguiente diagrama de clases, en donde una Escudo es un tipo especial de Armamento que se distingue del resto por su nombre.
+Codifique la clase tal que extienda de la clase Armamento, e implemente el constructor y el getter del campo nombre
+public class Escudo extends Armamento{
+  private String nombre;
+//Implemente los siguientes metodos
+/**
+* Constructor de la clase Escudo.
+* El nombre es el nombre de la clase.
+*/
+  public Escudo (Integer ataque) {
+    super(ataque);
+    nombre = "Escudo";
+  }
+
+  public String getNombre() {
+    return nombre;
+  }
+}
+
+///////////////////////////////////////
+Considere el siguiente diagrama de clases, en donde un ClientePremium es un tipo especial de Cliente que posee un descuento en sus compras.
+Codifique la clase ClientePremium tal que extienda de la clase Cliente, e implemente el constructor y el siguiente getter:
+public ClientePremium(String nombre, int descuento);
+public int getDescuento();
+class ClientePremium extends Cliente {
+    //Defina los atributos necesarios de la clase
+    private int descuento;
+
+    //Implemente los siguientes metodos
+    public ClientePremium(String nombre, int descuento) {
+        super(nombre);
+        this.descuento = descuento;
+    }
+    
+    public int getDescuento() {
+        return descuento;
+    }
+}
+
+
