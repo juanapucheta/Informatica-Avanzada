@@ -1,0 +1,77 @@
+Considere el siguiente diagrama de clases, en donde la clase ServidorDeReservas representa un servidos que gestiona reservas en distintas aerolineas, y la clase Agencia es un cliente que utiliza este servicio para comprar pasajes. 
+Implemente el metodo comprarPasaje de la clase Agencia, segun la documentacion del metodos. 
+
+public class Agencia {
+public static final String ERROR_NO_DISPONIBLE = “Error No Disponible. Mensaje: ”;
+public static final String ERROR_INESPERADO = “Error Inesperado. Mensaje: ”;
+private ServidorDeReservas servidor; 
+public Agencia (){
+servidor = new ServidorDeReservas();
+}
+
+/* Compra un pasaje en el vuelo especificado, en la fila y ubicacion *pasados como argumento y retorna un Strin con el codigo de reserva *retornado por el metodo “reservar” *del ServidorDeReservas. 
+*Si se produce una Excepcion por no estar disponible el vuelo / *asiento, retorna un String con el texto ERROR_NO_DISPONIBLE y el *mensaje de la excepcion. Si se produce un error inesperado retorna *un String con el texto ERROR_INESPERADO y el mensaje de la *excepcion. 
+*/
+
+public String comprarPasaje(String idVuelo, int fila, char ubicacion){
+try{
+String cadenaDeConfirmacion; 
+Asiento a = new Asiento(fila, ubicacion);
+cadenaDeConfirmacion = servidor.reservar(idVuelo, a);
+}
+catch(NoDisponibleException e){
+	return ERROR_NO_DISPONIBLE +e.getMessage();
+}
+catch(Exception e){
+return ERROR_INESPERADO + e.getMessage();
+}
+}
+}
+
+////////////////////////////////
+Implemente el metodo reservar de la clase ServidorDeReservas, segun la documentacion del metodos. 
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class ServidorDeReservas {
+	public static final String ARGUMENTOS_INVALIDOS= "Parametros Invalidos";
+	public static final String VUELO_DESCONOCIDO = "Vuelo Desconocido";
+	public static final String ASIENTO_OCUPADO = "Asiento Ocupado";
+	public static final String PREFIJO_CONFIRMACION = "Conf-";
+
+	//Mapa de ocupacion. Asocia un vuelo (idVuelo) con un Set<Asiento> que 
+	//contiene el conjunto de asientos ocupados.
+	public HashMap<String,Set<Asiento>> mapaDeOcupacion;
+
+	public ServidorDeReservas() {
+		mapaDeOcupacion = new HashMap<String,Set<Asiento>>();
+	}
+
+	public String reservar(String idVuelo, Asiento asiento) throws NoDisponibleException {
+	    
+	    // 1. Validar argumentos null
+	    if (idVuelo == null || asiento == null) {
+	        throw new IllegalArgumentException(ARGUMENTOS_INVALIDOS);
+	    }
+	    
+	    // 2. Validar que el vuelo exista en el mapa
+	    if (!mapaDeOcupacion.containsKey(idVuelo)) {
+	        throw new NoDisponibleException(VUELO_DESCONOCIDO);
+	    }
+	    
+	    // 3. Obtener los asientos ocupados de ese vuelo
+	    Set<Asiento> asientosOcupados = mapaDeOcupacion.get(idVuelo);
+	    
+	    // 4. Validar que el asiento no esté ocupado
+	    if (asientosOcupados.contains(asiento)) {
+	        throw new NoDisponibleException(ASIENTO_OCUPADO);
+	    }
+	    
+	    // 5. Marcar el asiento como ocupado
+	    asientosOcupados.add(asiento);
+	    
+	    // 6. Construir y devolver el código de confirmación
+	    return PREFIJO_CONFIRMACION + idVuelo + "-" + asiento.getFila() + asiento.getUbicacion();
+	}
+}
