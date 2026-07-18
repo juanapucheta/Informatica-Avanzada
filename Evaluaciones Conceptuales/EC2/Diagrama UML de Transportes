@@ -1,0 +1,68 @@
+Implemente los métodos indicados y reemplace "???" por lo que corresponda.
+public class Transportes {
+ArrayList<Vehiculo> moviles;
+
+public Transportes () {
+moviles = new ArrayList<Vehiculo>();
+}
+
+public void addMovil (Vehiculo v) {
+moviles.add(v);
+}
+
+public ArrayList<Acuatico> getAcuaticos () {
+ArrayList<Acuatico> acuaticos = new ArrayList<Acuatico>();
+for(Vehiculo v: moviles){
+if(v.getMedio().equals(Tipo.ACUATICO)){
+acuaticos.add((Acuatico)v);
+}
+}
+return acuaticos;
+}
+}
+
+///////////////////////////////////
+Implemente los métodos indicados y reemplace "???" por lo que corresponda. 
+
+import java.util.ArrayList;
+public class Transportes {
+    ArrayList<Vehiculo> moviles;
+    
+    public Transportes () {
+        moviles = new ArrayList<Vehiculo>();
+    }
+        public void addMovil (Vehiculo v) {
+        moviles.add(v);
+    }
+    
+    public ArrayList<Terrestre> getTerrestres () {
+        ArrayList<Terrestre> terrestres = new ArrayList<Terrestre>();
+        for (Vehiculo v : moviles) {
+            if (v.getMedio().equals(Tipo.TERRESTRE)) {
+                terrestres.add((Terrestre) v);
+            }
+        }
+        return terrestres;
+    }
+    
+    public ArrayList<Aereo> getAereos () {
+        ArrayList<Aereo> aereos = new ArrayList<Aereo>();
+        for (Vehiculo v : moviles) {
+            if (v.getMedio().equals(Tipo.AEREO)) {
+                aereos.add((Aereo) v);
+            }
+        }
+        return aereos;
+    }
+    
+    public ArrayList<Acuatico> getAcuaticos () {
+        ArrayList<Acuatico> acuaticos = new ArrayList<Acuatico>();
+        for (Vehiculo v : moviles) {
+            if (v.getMedio().equals(Tipo.ACUATICO)) {
+                acuaticos.add((Acuatico) v);
+            }
+        }
+        return acuaticos;
+    }
+}
+
