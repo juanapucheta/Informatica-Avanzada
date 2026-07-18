@@ -1,0 +1,17 @@
+Implemente la clase Camion que herede de la clase abstracta Vehiculo. 
+public class Camion extends Vehiculo{
+//constructor con parametros 
+  public Camion (int capacidadTanque, String chasis, String motor, double consumo){
+  	super(capacidadTanque, chasis, motor, consumo);
+  }
+
+/*Implemente los metodos faltantes- “rodar” incrementa los kms actuales del vehiculo, y descuenta la cantidad consumida (consumo * *km) del combustible del vehiculo.
+*Si la cantidad de combustible del vehiculo es insuficiente para recorrer la cantidad de kms solicitados, no se actualiza ninguna variable. 
+*/
+  public void rodar (int km){
+    if (consumo * km <= km){
+      kmActuales += km; 
+      combustible -= consumo * km; 
+    }
+  }
+}
