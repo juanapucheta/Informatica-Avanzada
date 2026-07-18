@@ -1,24 +1,22 @@
 Implementar método parcharTodas() asumiendo que la clase Bicicleta tiene un método public void parchar()
-	
-	import java.util.List; 
-	public class Evaluacion {
-	
+import java.util.List; 
+public class Evaluacion {
 	public HasMap <String, Bicicleta> clientes; 
-	
-	//constructor
+
+//constructor
 	public Evaluacion (){
 		clientes = new HasMap <String, Bicicleta>();
-}
-
+	}
 //Recorre la coleccion de clientes y llama al metodo parchar de cada bicicleta.
-public void parcharTodas(){
-	for (String key : clientes.keySet()){
-Bicicleta a = clientes.get(key);
-a.parchar();
-}
-}
+	public void parcharTodas(){
+		for (String key : clientes.keySet()){
+			Bicicleta a = clientes.get(key);
+			a.parchar();
+			}
+	}
 }
 
+/////////////////////////////////////////////////////////////
 En la clase especificada, implementar public void pintarUnAuto (String color, String patente. 
 Nota: Asuma que la clase Auto implementa el método: public void pintar (String color). 
 import java.util.HashSet;
@@ -28,22 +26,22 @@ import java.util.List;
 
 public class Evaluacion {
 //mapa que relaciona Autos con una patente del tipo String
-public HashMap<String,Auto> mapaDeAutos;
-//Constructor
-public Evaluacion (){
-mapaDeAutos=new HashMap<String,Auto>();
-}
-
+	public HashMap<String,Auto> mapaDeAutos;
+	//Constructor
+	public Evaluacion (){
+		mapaDeAutos=new HashMap<String,Auto>();
+	}
 //Pinta el auto con la patente indicada del color especificado
-public void pintarUnAuto (String color, String patente){
-for(String key:mapaDeAutos.keySet()){
-if(key.equals(patente)){
-mapaDeAutos.get(key).pintar(color);
-}
-}
-}
+	public void pintarUnAuto (String color, String patente){
+		for(String key:mapaDeAutos.keySet()){
+			if(key.equals(patente)){
+				mapaDeAutos.get(key).pintar(color);
+			}
+		}
+	}
 }
 
+/////////////////////////////////////////////////////////////
 Para la clase especificada, implementar public void parcharTodas (). 
 Nota: Asuma que la clase Bicicleta implementa el método public void parchar (). 
 import java.util.HashSet;
@@ -52,16 +50,71 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Evaluacion {
-public HashMap<String,Bicicleta> clientes;
-//Constructor
-public Evaluacion () {
-clientes = new HashMap<String,Bicicleta>();
+	public HashMap<String,Bicicleta> clientes;
+	//Constructor
+	public Evaluacion () {
+		clientes = new HashMap<String,Bicicleta>();
+	}
+// Recorre la coleccion clientes y llama al metodo parchar de //cada bicicleta
+	public void parcharTodas () {
+		for (String key: clientes.keySet()){
+			Bicicleta a = clientes.get (key);
+			a.parchar();
+		}
 }
 
-// Recorre la coleccion clientes y llama al metodo parchar de //cada bicicleta
-public void parcharTodas () {
-for (String key: clientes.keySet()){
-Bicicleta a = clientes.get (key);
-a.parchar();
+/////////////////////////////////////////////////////////////
+Para la clase especificada, implementar public HashSet<Persona> listaVotantes ()
+Nota: Asuma que la clase Persona implementa los métodos: public int getEdad () y public int getDni ()
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Iterator;
+
+public class Evaluacion {
+    public ArrayList<Persona> personas;
+    //Constructor
+    public Evaluacion () {
+        personas = new ArrayList<Persona>();
+    }
+    /**
+    * Devuelve un HashSet con todas las personas mayores o iguales a 18 anios.
+    */
+    public HashSet<Persona> listaVotantes (){
+        HashSet<Persona> votantes = new HashSet<Persona>();
+        for (Persona p : personas) {
+            if (p.getEdad() >= 18) {
+                votantes.add(p);
+            }
+        }
+        return votantes;
+    }
 }
+
+/////////////////////////////////////////////////////////////
+
+Para la clase especificada, implementar public void marcarComoComprado(String nombre)
+Nota: Asuma que la clase Item implementa los métodos: public void setComprado(boolean comprado) y public String getNombre()
+
+import java.util.ArrayList;
+
+public class Evaluacion {
+    public ArrayList<Item> listaDeCompras;
+    
+    public Evaluacion() {
+        listaDeCompras = new ArrayList<Item>();
+    }
+    
+    /**
+    * Implementar el metodo de manera que busque el item con el nombre
+    * indicado en la lista y lo marque como comprado (true)
+    */
+    public void marcarComoComprado(String nombre) {
+        for (Item item : listaDeCompras) {
+            if (item.getNombre().equals(nombre)) {
+                item.setComprado(true);
+            }
+        }
+    }
 }
