@@ -1,0 +1,21 @@
+Implemente el constructor y el metodo toString() de la subclase. 
+public class Karting extends Vehiculo {
+  public class Karting (String propietario){
+    super(4, propietario);
+  }
+
+  public String toString(){
+    return(“Karting de” + this.getPropietario() + “( “ + super.toString() + “ )” );
+  }
+}
+
+////////////////////////////////
+public class Bicicleta extends Vehiculo {
+  public Bicicleta (String propietario){
+    super(2, propietario);
+  }
+
+  public String toString(){
+    return(“Bicicleta de” + this.getPropietario() + “( “ + super.toString() + “ )” );
+  }
+}
