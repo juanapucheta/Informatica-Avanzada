@@ -1,0 +1,49 @@
+Dada la siguiente interface y el siguiente enumerado: 
+public interface InstalacionDeportiva{
+double getSuperficie(); }
+Implemente la clase Polideportivo que implementa la interface InstalacionDeportiva.
+Considere el metodo * public double getSuperficie() ----> Devuelve la superficie del polideportivo*
+
+public class Polideportivo implement InstalacionDeportiva {
+  	private double largo; 
+  	private double ancho;
+  	private String nombre; 
+
+  public Polideportivo(double largo, double ancho, String nombre){
+    this.largo = largo; 
+    this.ancho = ancho; 
+    this.nombre = nombre;
+  }
+
+  public double getSuperficie(){
+    return ancho * largo;
+  }
+}
+
+////////////////////////////////////
+Dada la siguiente interface y el siguiente enumerado:
+public interface Edificio{
+double getSuperficieEdificio(); }
+Modifique la clase Oficinas para que implemente la interface Edificio. Considere el método:
+* public double getSuperficieEdificio() ----> Retorna el area del edificio considerando el total de todos los pisos*
+
+public class Oficinas implements Edificio{
+  private int numeroDePisos;
+  private double ancho;
+  private double largo;
+/**
+* Constructor con parametros
+* @param numeroDePisos la cantidad de pisos del inmueble
+* @param ancho el ancho del edificio
+* @param largo el largo del edificio
+*/
+  public Oficinas(int numeroDePisos, double ancho, double largo){
+    this.numeroDePisos = numeroDePisos; 
+    this.ancho = ancho; 
+    this.largo = largo; 
+  }
+
+  public double getSuperficieEdificio(){
+    return this.numeroDePisos*this.ancho*this.largo;
+  }
+}
