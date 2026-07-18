@@ -1,0 +1,64 @@
+/**
+* Implemente la clase 'Camionero' que extiende de 'Persona' e implementa la interfaz 'Conductor'
+*
+* 1. Debera codificar un constructor para esta clase que reciba los parametros "String nombre" y
+* 2. Debera codificar los metodos necesarios declarados en la interfaz implementada. 
+* Nota: Cond extiende de Conductor
+* 3. Un camionero maneja a la maxima velocidad permitida para un Conductor (VEL_MAX), pero tran
+* la velocidad maxima permitida para circular con carga (VEL_MAX_CON_CARGA)
+*
+* NOTA: Segun nuestro modelo, asuma los siguientes comportamientos para los metodos declarados
+* void manejar (Vehiculo v, String direccion)
+* a. Llevar el vehiculo a una direccion, (i.e., setea la direccion en el vehiculo)
+* b. Setear una velocidad crucero.
+*
+* void transportar (Vehiculo v, String direccion, Carga c):
+* a. Llevar el vehiculo a una direccion.
+* b. Setear una velocidad crucero.
+* c. Marcar la carga como "despachada"
+**/
+
+public class Camionero extends Persona implements ConductorPesado(){
+// Constructor que recibe nombre y dni, delegando la inicialización // a la clase padre Persona.
+public Camionero(String nombre, String dni){
+		super(nombre, dni);
+}
+
+//Lleva el vehículo a una direccion a la velocidad maxima permitida // para un Conductor comun (VEL_MAX).
+void manejar (Vehiculo v, String direccion){
+v.setUbicacion(direccion);
+v.setVelocidad(VEL_MAX);
+}
+
+//Lleva el vehículo a una direccion, a velocidad crucero con carga.
+//Marca la carga como despachada. 
+void transportar (Vehiculo v, String direccion, Carga c){
+v.setUbicacion(direccion);
+v.setVelocidad(VEL_MAX_CON_CARGA);
+c.setDespachado(true);
+}
+}
+
+///////////////////////////////////
+public class Taxista extends Persona implements Conductor {
+    
+    /**
+     * Constructor que recibe nombre y dni,
+     * delegando la inicializacion a la clase padre Persona.
+     */
+    public Taxista(String nombre, String dni) {
+        super(nombre, dni);
+    }
+    
+    /**
+     * Lleva el vehiculo a una direccion, a la velocidad
+     * maxima permitida para un Conductor (VEL_MAX)
+     */
+    public void manejar(Vehiculo v, String direccion) {
+        v.setUbicacion(direccion);
+        v.setVelocidad(VEL_MAX);
+    }
+}
+
+///////////////////////////////////
+
