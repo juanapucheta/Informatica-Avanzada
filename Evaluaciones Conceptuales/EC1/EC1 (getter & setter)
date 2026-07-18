@@ -19,6 +19,7 @@ public int getBase (){
 return base;
 }
 
+/////////////////////////////////////////////
 
 Implemente getter y setter de la variable especificada
 public class Docente {
@@ -50,6 +51,8 @@ return dni;
 }
 }
 
+/////////////////////////////////////////////
+
 Implemente el getter y el setter de acuerdo a la documentación de la clase
 public class Rectangulo {
 public String identificador;
@@ -71,3 +74,37 @@ public String getIdentificador () {
 return identificador;
 }
 }
+
+
+/////////////////////////////////////////////
+
+Implemente getter y setter de la variable especificada
+public class Materia {
+    // Variables
+    private String profesor;
+    
+    //Constructor
+    public Materia (String profesor){
+        this.profesor = profesor;
+    }
+    
+    /**
+    * si el argumento profesor es distinto de null, setea el valor y retorna true
+    * Si el valor es null o un String vacio, ignora el valor y retorna false
+    * @param profesor. El nombre del profesor
+    */
+    public boolean setProfesor(String profesor){
+        if(profesor == null || profesor.isEmpty()){
+            return false;
+        }
+        else{
+            this.profesor = profesor;
+            return true;
+        }
+    }
+    
+    public String getProfesor(){
+        return this.profesor;
+    }
+}
+
