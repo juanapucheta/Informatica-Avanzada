@@ -1,0 +1,115 @@
+Los tipos de libro de una biblioteca están representados en el tipo enumerado Libro:
+public enum Libro {
+NOVELA, POESIA, AUTOAYUDA, HISTORIA, BIOGRAFIA, CIENCIA;
+}
+Implemente la clase Biblioteca y los métodos definidos. 
+Debe contener una colección del tipo HashMap que contenga tipo de libro y los días máximos de préstamo permitidos.
+
+import java.util.HashMap;
+public class Biblioteca {
+  HashMap <Libro,Integer> mapaDeTiempoRetorno;
+/**
+* Inicializa un HashMap para almacenar todos los libros del enumerado y la cantidad de dias
+* que pueden prestarse. Debe asignar dias por defecto 3
+**/
+  public Biblioteca(){
+    mapaDeTiempoRetorno = new HashMap <Libro, Integer> () ;
+    for(Libro libros: Libro.values()){
+      mapaDeTiempoRetorno.put(libros,3);
+    }
+  }
+/**
+* Ajusta los dias de prestamo de un libro en particular
+**/
+  public void setDias (Libro b, int dias){
+    mapaDeTiempoRetorno.put(b,dias);
+  }
+/**
+* Retorna los dias de prestamo de un libro en particular
+**/
+  public int getDias(Libro b){
+    return mapaDeTiempoRetorno.get(b);
+  }
+/**
+* Retorna el HashMap biblioteca
+**/
+  public HashMap<Libro,Integer> getBiblioteca(){
+    return mapaDeTiempoRetorno;
+  }
+}
+
+////////////////////////////////////////////////////
+Una empresa del alquiler de autos posee diferentes alternativas de alquiler para sus clientes. Los tipos de autos están representados en el siguiente enumerado:
+public enum Auto {
+ECONOMICO, MEDIANO, GRANDE, LUJO, LIMUSINA;
+}
+Implemente la clase Catalogo y los métodos definidos. Debe contener una colección del tipo HashMap que contenga tipo de auto y precio de alquiler.
+import java.util.HashMap;
+
+public class Catalogo {
+    HashMap<Auto, Integer> catalogo;
+    
+    /**
+    * Inicializa un HashMap para almacenar todos los autos
+    * del enumerado y el precio de alquiler. Debe asignar
+    * precio por defecto 1500
+    **/
+    public Catalogo(){
+        catalogo = new HashMap<Auto, Integer>();
+        for (Auto a : Auto.values()){
+            catalogo.put(a, 1500);
+        }
+    }
+    
+    /**
+    * Ajusta el precio de alquiler de un auto en particular
+    **/
+    public void setPrecio (Auto a, int precio){
+        catalogo.put(a, precio);
+    }
+}
+
+////////////////////////////////////////////////////
+
+
+Un restaurante sirve diferentes bebidas definidas en el tipo enumerado Bebida:
+public enum Bebida {
+JUGO, CAFE, CERVEZA, TRAGO, GASEOSA;
+}
+Implemente la clase Carta y los métodos definidos. Debe contener una colección del tipo HashMap que contenga tipo de bebida y precio.
+
+import java.util.HashMap;
+public class Carta {
+  HashMap <Bebida,Integer> carta;
+/**
+* Inicializa un HashMap para almacenar todas las bebidas del enumerado
+* y sus precios. Debe asignar precio por defecto 30
+**/
+  public Carta (){
+    carta = new HashMap<Bebida,Integer>();
+    for(Bebida m : Bebida.values()){
+      carta.put(m,30);
+    }
+  }
+/**
+* Ajusta el precio de una bebida en particular
+**/
+  public void setPrecio (Bebida b, int precio){
+    carta.put(b,precio);
+  }
+/**
+* Retorna el precio de una bebida en particular
+**/
+  public int getPrecio(Bebida b){
+    return carta.get(b);
+  }
+/**
+* Retorna el HashMap Carta
+**/
+  public HashMap<Bebida,Integer> getCarta(){
+    return carta;
+  }
+}
+
+
+////////////////
