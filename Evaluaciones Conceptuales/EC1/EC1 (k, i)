@@ -1,107 +1,116 @@
 public class A {
-private static int k = 0; 
-private int i; 
+	private static int k = 0; 
+	private int i; 
 
-public A(int j){
-	i = j; 
-} 
+	public A(int j){
+		i = j; 
+	} 
 
-public void m1 (int i){
-A aux = new A(0);
-aux.m2(i);
-k = k + i + 1; 
+	public void m1 (int i){
+		A aux = new A(0);
+		aux.m2(i);
+		k = k + i + 1; 
+	}
+
+	public void m2 (int i){
+		this.i += i; 
+		i = i * 2; 
+		k = k + i; 
+	}
 }
 
-public void m2 (int i){
-this.i += i; 
-i = i * 2; 
-k = k + i; 
-}
-}
-
-Se ejecutan las siguientes instrucciones: 
+// Se ejecutan las siguientes instrucciones: 
 A a = new A(3); 
 a.m2(5);
 a.m1(5);
 a.m2(5);
 
-Indique el valor de la variable de clase K. K = 36 
+// Indique el valor de la variable de clase K. K = 36 
 
 
 public class A {
-private static int k = 0;
-private int i;
-public A(int j){
-i = j;
-}
-public void m1(int i) {
-A aux = new A(0);
-aux.m2(i);
-k = k+i+1;
-}
-public void m2(int i) {
-this.i += i;
-i = i*2;
-k = k+i;
-}
+	private static int k = 0;
+	private int i;
+
+	public A(int j){
+		i = j;
+	}
+
+	public void m1(int i) {
+		A aux = new A(0);
+		aux.m2(i);
+		k = k+i+1;
+	}
+
+	public void m2(int i) {
+		this.i += i;
+		i = i*2;
+		k = k+i;
+	}
 }
 
-Se ejecutan las siguientes instrucciones:
+// Se ejecutan las siguientes instrucciones:
 A a = new A(2);
 a.m1(5);
 a.m1(1);
 a.m2(2);
 
-Indique el valor de la variable de clase K. K =24 
+// Indique el valor de la variable de clase K. K =24 
 
 public class A {
-private static int k = 0;
-private int i;
-public A(int j){
-i = j;
-}
-public void m1(int i) {
-A aux = new A(0);
-aux.m2(i);
-k = k+i+1;
-}
-public void m2(int i) {
-this.i += i;
-i = i*2;
-k = k+i;
-}
+	private static int k = 0;
+	private int i;
+	
+	public A(int j){
+		i = j;
+	}
+
+	public void m1(int i) {
+		A aux = new A(0);
+		aux.m2(i);
+		k = k+i+1;
+	}
+
+	public void m2(int i) {
+		this.i += i;
+		i = i*2;
+		k = k+i;
+	}
 }
 
-Se ejecutan las siguientes instrucciones:
+// Se ejecutan las siguientes instrucciones:
 A a = new A(4);
 a.m2(2);
 a.m2(4);
 a.m1(2);
 
-Indique el valor de la variable de clase K. K = 19
+// Indique el valor de la variable de clase K. K = 19
 
 public class A {
-private static int k = 0;
-private int i;
-public A(int j){
-i = j;
-}
-public void m1(int i) {
-A aux = new A(0);
-aux.m2(i);
-k = k+i+1;
-}
-public void m2(int i) {
-this.i += i;
-i = i*2;
-k = k+i;
-}
+	private static int k = 0;
+	private int i;
+	
+	public A(int j){
+		i = j;
+	}
+
+	public void m1(int i) {
+		A aux = new A(0);
+		aux.m2(i);
+		k = k+i+1;
+	}
+
+	public void m2(int i) {
+		this.i += i;
+		i = i*2;
+		k = k+i;
+	}
 }
 
-Se ejecutan las siguientes instrucciones:
+// Se ejecutan las siguientes instrucciones:
 A a = new A(3);
 a.m1(3);
 a.m1(2);
 a.m1(4);
 
-Indique el valor de la variable de clase K. K = 3
+// Indique el valor de la variable de clase K. K = 3
