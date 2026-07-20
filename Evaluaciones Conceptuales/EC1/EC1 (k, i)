@@ -7,7 +7,7 @@ public A(int j){
 } 
 
 public void m1 (int i){
-A aumx = new A(0);
+A aux = new A(0);
 aux.m2(i);
 k = k + i + 1; 
 }
