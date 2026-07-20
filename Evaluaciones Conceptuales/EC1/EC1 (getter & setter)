@@ -4,77 +4,83 @@ Implementar getter y setter
 *@param base. La base valida debe ser un numero entre 0 y 500. 
 */
 
-public boolean setBase (int base){
-if (base < 0 || base > 500){
-return false; 
-}
-else {
-this.base = base; 
-return true; 
-}
+    public boolean setBase (int base){
+        if (base < 0 || base > 500){
+        return false; 
+    }
+    else {
+        this.base = base; 
+        return true; 
+    }
 }
 
 //Retorna el valor del radio 
-public int getBase (){
-return base;
-}
+    public int getBase (){
+        return base;
+    }
 
 /////////////////////////////////////////////
 
 Implemente getter y setter de la variable especificada
 public class Docente {
-private int dni;
-//Constructor
-public Docente (int dni){
-this.dni = dni;
-}
+    private int dni;
+    
+    //Constructor
+    public Docente (int dni){
+        this.dni = dni;
+    }
+
 /**
 * si el argumento dni es valido, setea el valor y retorna true
 * Si el valor es invalido, ignora el valor y retorna false
 * @param dni. El dni valido debe ser un numero entre 1 y 99999999
 */
-public boolean setDni(int dni){
-if(dni >= 1 && dni <= 99999999){
-this.dni = dni;
-return true;
-}
-else{
-return false;
-}
-}
+
+    public boolean setDni(int dni){
+        if(dni >= 1 && dni <= 99999999){
+            this.dni = dni;
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
 /**
 * Retorna el valor de dni
 */
-public int getDni (){
-return dni;
-}
+    public int getDni (){
+        return dni;
+    }
 }
 
 /////////////////////////////////////////////
 
 Implemente el getter y el setter de acuerdo a la documentación de la clase
 public class Rectangulo {
-public String identificador;
+    public String identificador;
+
 /**
 * Si el argumento es distinto de null, setea el identificador,
 * removiendo antes cualquier espacio inicial y conviertiendo a minusculas.
 * Si el argumento es null, ignora el valor sin setear el identificador
 * @param el nuevo identificador
 */
-public void setIdentificador (String id){
-if (id!=null) {
-identificador=id.trim().toLowerCase();
-} //ignoro si es null
-}
+
+    public void setIdentificador (String id){
+        if (id!=null) {
+            identificador=id.trim().toLowerCase();
+        } //ignoro si es null
+    }
+
 /**
 * retorna el valor del identificador de este Circulo
 */
-public String getIdentificador () {
-return identificador;
-}
-}
 
+    public String getIdentificador () {
+        return identificador;
+    }
+}
 
 /////////////////////////////////////////////
 
@@ -108,3 +114,28 @@ public class Materia {
     }
 }
 
+/////////////////////////////////////////////
+// Implemente getter y setter de la variable especificada
+public class Materia {
+    // Variables
+    private int horainicio;
+
+    //Constructor
+    public Materia (int horainicio){
+        this.horainicio = horainicio;
+    }
+
+/**
+* Si el argumento horainicio es valido, setea el valor y retorna true
+* Si el valor es invalido, ignora el valor y retorna false
+* @param horainicio. La horainicio valida debe ser estar entre las 9 y las 18 inclusive.
+*/
+
+    public boolean setHoraInicio(int horainicio){
+        if (horainicio < 9 || horainicio > 18){
+        return false;
+    }
+
+    this.horainicio = horainicio;
+    return true;
+}
