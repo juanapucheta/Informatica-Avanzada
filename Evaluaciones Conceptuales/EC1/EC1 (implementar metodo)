@@ -118,3 +118,33 @@ public class Evaluacion {
         }
     }
 }
+
+/////////////////////////////////////////////////////////////
+
+Para la clase especificada, implementar public void parcharUna (String cliente). 
+Nota: Asuma que la clase Bicicleta implementa el método: public void parchar ()
+
+import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+public class Evaluacion {
+    public HashMap<String,Bicicleta> clientes;
+    
+    public Evaluacion () {
+        clientes = new HashMap<String,Bicicleta>();
+    }
+    /**
+    * Recorre la coleccion clientes y llama al metodo parchar de la bicicleta
+    * asociada al cliente del argumento.
+    * @param El cliente a buscar
+    */
+    public void parcharUna (String cliente) {
+        if (clientes.containsKey(cliente)) {
+            Bicicleta b = clientes.get(cliente);
+            b.parchar();
+        }
+    }
+}
+
+
