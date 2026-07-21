@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Billetera
+comment1.params=
+comment1.target=Billetera()
+comment2.params=dolares
+comment2.target=void\ agregarDolares(java.lang.Integer)
+comment2.text=\r\n\ Agrega\ dolares\ a\ la\ billetera.\r\n\ En\ caso\ de\ recibir\ un\ valor\ menor\ o\ igual\ a\ cero\r\n\ ignora\ la\ accion.\r\n\ @param\ dolares\ La\ cantidad\ de\ dolares\ a\ agregar.\r\n
+comment3.params=cupones
+comment3.target=void\ agregarCupones(java.lang.Integer)
+comment3.text=\r\n\ Agrega\ cupones\ a\ la\ billetera.\r\n\ En\ caso\ de\ recibir\ un\ valor\ menor\ o\ igual\ a\ cero\r\n\ ignora\ la\ accion.\r\n\ @param\ cupones\ La\ cantidad\ de\ cupones\ a\ agregar.\r\n
+comment4.params=monto
+comment4.target=java.lang.Integer\ cantidadCupones(java.lang.Integer)
+comment4.text=\r\n\ Calcula\ la\ cantidad\ de\ cupones\ en\ relacion\ al\ monto\ ingresado.\r\n\ Siempre\ devuelve\ un\ valor\ menor\ o\ igual\ a\ los\ cupones\ disponibles\r\n\ en\ la\ billetera\ (Cada\ cupon\ tiene\ un\ valor\ de\ 10\ dolares)\r\n\ Por\ ejempo\r\n\ -\ si\ el\ monto\ es\ 20\ dolares\ y\ solo\ se\ tiene\ un\ cupon\r\n\ en\ la\ billetera\ el\ metodo\ devolvera\ 1.\r\n\ -\ si\ el\ monto\ es\ 10\ y\ tenemos\ 2\ cupones\ el\ metodo\ devolvera\ 1.\r\n\ @param\ monto\ El\ monto\ sobre\ el\ cual\ calcular\ cantidad\ de\ cupones\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ (recuerde\ que\ los\ montos\ se\ almacenan\ en\ centavos)\r\n\ @return\ La\ cantidad\ de\ cupones\ a\ usar\ de\ la\ billetera.\r\n
+comment5.params=monto
+comment5.target=void\ gastar(java.lang.Integer)
+comment5.text=\r\n\ Intenta\ realizar\ una\ compra.\ Se\ utiliza\ la\ mayor\ cantidad\r\n\ posible\ de\ cupones\ (no\ se\ puede\ fraccionar)\ y\ se\ completa\r\n\ el\ resto\ con\ dolares.\r\n\ Ej\:\ Se\ tienen\ 3\ cupones\ y\ 12.75\ dolares\ y\ el\ monto\ de\ la\ compra\r\n\ \ \ \ \ es\ 34.25\ dolares.\ Como\ la\ compra\ se\ puede\ realizar\ el\ saldo\r\n\ \ \ \ \ final\ es\ de\ 0\ cupones\ y\ 8.50\ dolares.\r\n\ Recordar\ que\ 1\ dolar\ se\ representa\ con\ el\ entero\ 100.\r\n\ \r\n\ Si\ el\ monto\ a\ gastar\ es\ mayor\ a\ los\ fondos\ disponibles,\ lanza\r\n\ la\ excepci\u00F3n\ DineroInsuficienteException.\r\n\ En\ cambio,\ si\ la\ cantidad\ de\ dolares\ a\ gastar\ es\ negativa\r\n\ lanza\ IllegalArgumentException.\r\n\ \r\n\ @param\ monto\ El\ monto\ en\ dolares\ a\ gastar.\r\n\ @throws\ DineroInsuficienteException\ Cuando\ el\ valor\ es\ mayor\ al\ dinero\ disponible.\r\n\ @throws\ IllegalArgumentException\ Cuando\ la\ cantidad\ es\ menor\ igual\ a\ cero.\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Imprime\ lo\ siguiente\:\r\n\ \r\n\ "Billetera\ ->\ {cupones}\ cupones\ y\ {dolares}"\ \r\n\ \r\n\ Donde\ se\ remplaza\ los\ corchetes\ por\ el\ valor\ de\ la\ variable.\r\n\ Ej\:\r\n\ \r\n\ "Billetera\ ->\ 3\ cupones\ y\ 10.25"\r\n
+comment7.params=
+comment7.target=java.lang.Integer\ getDolares()
+comment8.params=
+comment8.target=java.lang.Integer\ getCupones()
+numComments=9

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Monomotor
+comment1.params=nombre
+comment1.target=Monomotor(java.lang.String)
+comment2.params=
+comment2.target=java.lang.Integer\ getCantidadMotores()
+comment3.params=
+comment3.target=void\ imprimirArmamento()
+comment3.text=\r\n\ Imprime\ la\ lista\ de\ armamento\ disponible\ del\ monomotor.\r\n\ Dicha\ lista\ se\ encuentra\ ordenada\ de\ acuerdo\ al\ puntaje\ de\ cada\ monomotor\ (menor\ a\ mayor)\r\n\ Si\ no\ se\ encuentra\ ning\u00FAn\ armamento\ se\ imprimir\u00E1\ el\ siguiente\ error\:\r\n\ \ \ \ \ \ El\ veh\u00EDculo\ no\ posee\ ning\u00FAn\ armamento\r\n\ Ayuda\:\ La\ clase\ Armamento\ implementa\ la\ interfaz\ Comparable\r\n\ Ej\:\ \r\n\ \ \ \ \ \ Pincha\ Ruedas\ puntaje\:\ 20\r\n\ \ \ \ \ \ Lanza\ Misiles\ puntaje\:\ 50\r\n\ \ \ \ \ \ Defensa\ Frontal\ puntaje\:\ 100\r\n\ @return\r\n
+numComments=4

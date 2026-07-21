@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Bateria
+comment1.params=voltaje
+comment1.target=Bateria(java.lang.Integer)
+comment1.text=\r\n\ En\ el\ caso\ de\ la\ bateria\ la\ capacidad\ suele\ determinarse\ en\ mili\ Ampere\ por\r\n\ hora\ [mAh]\ Esta\ se\ relaciona\ con\ la\ unidad\ Wh\ a\ trav\u00E9s\ de\ la\ tensi\u00F3n\ que\ entrega\ la\r\n\ bater\u00EDa\ Ej\:\ 3000\ mAh\ *\ 5\ V\ \=\ 11.100\ mWh\ \=\ 11.1\ Wh\r\n\ \r\n\ @param\ voltaje\r\n
+comment2.params=
+comment2.target=java.lang.Integer\ getVoltajeBateria()
+comment2.text=\r\n\ @return\ retorna\ la\ tensi\u00F3n\ de\ trabajo\ de\ la\ bateria\r\n
+comment3.params=voltajeBateria
+comment3.target=void\ setVoltajeBateria(java.lang.Integer)
+comment3.text=\r\n\ Cambia\ la\ tensi\u00F3n\ de\ trabajo\ de\ la\ bateria\r\n\ Se\ debe\ renovar\ el\ c\u00E1lculo\ de\ la\ capacidad\ m\u00E1xima\ descripta\ en\ el\ constructor\r\n\ @param\ voltajeBateria\ nuevo\ voltage\ de\ la\ bateria\r\n
+numComments=4

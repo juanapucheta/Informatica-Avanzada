@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Armamento
+comment0.text=\ Esta\ clase\ es\ abstracta\ para\ que\ no\ se\ pueda\ instanciar.\r\n\ Las\ pruebas\ debe\ realizarlas\ mediante\ las\ subclases.\r\n
+comment1.params=tipo\ puntaje
+comment1.target=Armamento(TipoArmamento,\ java.lang.Integer)
+comment1.text=\r\n\ Inicializa\ un\ armamento\ segun\ tipo\ y\ puntaje.\r\n\ @param\ tipo\ Si\ es\ defensivo\ u\ ofensivo.\r\n\ @param\ puntaje\ El\ puntaje\ inicial.\r\n
+comment2.params=armamento
+comment2.target=int\ compareTo(Armamento)
+comment2.text=\r\n\ Devuelve\:\r\n\ -1\ \:\ El\ puntaje\ del\ armamento\ introducido\ es\ mayor\ al\ propio\r\n\ \ 0\ \:\ El\ puntaje\ del\ armamento\ introducido\ es\ igual\ al\ propio\r\n\ \ 1\ \:\ El\ puntaje\ del\ armamento\ introducido\ es\ menor\ al\ propio\r\n\ @param\ armamento\ El\ armamento\ contra\ el\ cual\ comparar.}\r\n\ @return\ El\ valor\ correspondiente.\r\n
+comment3.params=v
+comment3.target=void\ usar(Vehiculo)
+comment3.text=\r\n\ Cada\ armamento\ aplica\ alg\u00FAn\ efecto\ sobre\ un\ veh\u00EDculo.\r\n\ Los\ armamentos\ pueden\ ser\ defensivos,\ en\ cuyo\ caso\ se\ aplicar\u00E1n\r\n\ sobre\ el\ veh\u00EDculo\ propio.\r\n\ Tambi\u00E9n,\ pueden\ ser\ ofensivos,\ en\ cuyo\ caso\ se\ aplicar\u00E1n\ sobre\ \r\n\ el\ veh\u00EDculo\ enemigo.\r\n\ \r\n\ Debe\ imprimir\ en\ pantalla\ el\ mensaje\:\r\n\ \ \ "Aplicando\ a\ {vehiculo}\ el\ armamento"\r\n\ donde\ vehiculo\ es\ el\ nombre.\r\n\ \r\n\ @param\ v\ veh\u00EDculo\ propio\ o\ enemigo.\r\n
+comment4.params=
+comment4.target=java.lang.Integer\ getPuntaje()
+comment4.text=\r\n\ Devuelve\ el\ puntaje\ del\ armamento.\ El\ puntaje\ es\:\r\n\ -\ El\ ataque\ en\ el\ caso\ de\ un\ armamento\ del\ tipo\ ofensivo\r\n\ -\ La\ defensa\ en\ el\ caso\ de\ un\ armamento\ del\ tipo\ defensivo\r\n\ @return\ El\ puntaje\ correspondiente.\r\n
+comment5.params=
+comment5.target=TipoArmamento\ getTipo()
+comment5.text=\r\n\ Devuelve\ el\ tipo\ de\ armamento\r\n\ @param\ tipo\r\n
+comment6.params=tipo
+comment6.target=void\ setTipo(TipoArmamento)
+comment6.text=\r\n\ Cambia\ el\ tipo\ de\ armamento\r\n\ @param\ tipo\r\n
+numComments=7

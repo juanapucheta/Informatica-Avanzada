@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=CombustibleLiquido
+comment1.params=capacidadLitros
+comment1.target=CombustibleLiquido(java.lang.Integer)
+comment1.text=\r\n\ En\ el\ caso\ del\ combustible\ la\ capacidad\ se\ mide\ en\ litros.\r\n\ 1\ litro\ de\ combustible\ equivale\ a\ 11.7\ kilo\ Watt\ hora\ -\ 11.700\ Wh\r\n
+comment2.params=
+comment2.target=java.lang.Integer\ getCapacidadLitros()
+numComments=3

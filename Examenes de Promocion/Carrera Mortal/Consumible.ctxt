@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Consumible
+comment0.text=\r\n\ Los\ insumos\ son\ componentes\ capaz\ de\ entregar\r\n\ energia.\ Las\ interfaces\ est\u00E1n\ orientadas\r\n\ a\ poder\ consultar\ los\ niveles\ y\ modificarlos\r\n
+comment1.params=
+comment1.target=java.lang.Integer\ getNivelDeEnergia()
+comment1.text=\r\n\ Devuelve\ el\ nivel\ de\ energia\ del\ insumo,\ \ de\ manera\ porcentual\ (0\ a\ 100%)\r\n\ \ IMPORTANTE\:\ si\ bien\ la\ capacidad\ actual\ y\ m\u00E1xima\ son\ Integer,\ el\r\n\ \ c\u00E1lculo\ debe\ hacerse\ en\ Double\ y\ convertirlo\ en\ entero\ nuevamente\ para\r\n\ \ retornar\ el\ nivel\ de\ energia.\r\n\ \ (De\ lo\ contrario\ se\ producir\u00E1n\ errores\ en\ los\ c\u00E1lculos)\r\n\ @return\ Nivel\ de\ energ\u00EDa\ en\ porcentaje.\r\n
+comment2.params=wattsHora
+comment2.target=void\ consumirEnergia(java.lang.Integer)
+comment2.text=\r\n\ La\ energ\u00EDa\ se\ consume\ en\ Watts\ por\ hora,\ esto\ afectar\u00E1\r\n\ el\ nivel\ de\ energ\u00EDa\ del\ insumo\ dependiendo\ de\ la\r\n\ capacidad\ de\ cada\ insumo.\ Si\ la\ cantidad\ que\ se\ pretende\ consumir\r\n\ es\ mayor\ a\ la\ disponible\ se\ arroja\ un\ IllegalArgumentException\ \r\n\ @param\ wattsHora\ Cantidad\ de\ energia\ a\ consumir.\r\n\ @throws\ IllegalArgumentException\ Si\ la\ cantidad\ que\ se\ pretende\ consumir\r\n\ es\ mayor\ a\ la\ disponible.\r\n
+comment3.params=wattsHora
+comment3.target=void\ recargarEnergia(java.lang.Integer)
+comment3.text=\r\n\ La\ energ\u00EDa\ se\ puede\ recargar,\ de\ la\ misma\ forma\ en\ que\ se\ consume.\r\n\ En\ caso\ de\ que\ la\ cantidad\ de\ energ\u00EDa\ suministrada\ sea\ mayor\ a\ la\ \r\n\ capacidad\ del\ insumo,\ la\ energ\u00EDa\ del\ insumo\ quedar\u00E1\ en\ capacidad\ m\u00E1xima\r\n\ (SIN\ arrojar\ excepci\u00F3n)\r\n\ Puede\ arrojar\ un\ IllegalArgumentException\ si\ se\ introduce\ valores\ de\r\n\ energ\u00EDa\ negativos\ \r\n\ @param\ wattsHora\ La\ cantidad\ de\ energ\u00EDa\ a\ recargar.\r\n\ @throws\ IllegalArgumentException\ Si\ se\ introduce\ un\ valor\ de\ energ\u00EDa\ negativo.\r\n
+numComments=4

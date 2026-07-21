@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=MultiMotor
+comment1.params=nombre
+comment1.target=MultiMotor(java.lang.String)
+comment2.params=
+comment2.target=java.lang.Integer\ getCantidadMotores()
+comment3.params=
+comment3.target=void\ imprimirArmamento()
+comment3.text=\r\n\ Imprime\ la\ lista\ de\ armamento\ disponible\ del\ multimotor.\r\n\ Dicha\ lista\ se\ encuentra\ ordenada\ alfab\u00E9ticamente\ de\ acuerdo\ al\ nombre\ de\ cada\ \r\n\ armamento\r\n\ Ayuda\:\ Utilizar\ los\ nombres\ de\ los\ armamentos\ en\ vez\ del\ objeto,\ ya\ que\ Armamento\r\n\ utiliza\ la\ clase\ Comparable\ pero\ los\ ordenada\ de\ acuerdo\ al\ puntaje\r\n\ Ej\:\ \r\n\ \ \ \ \ \ Defensa\ Frontal\ puntaje\:\ 100\r\n\ \ \ \ \ \ Lanza\ Misiles\ puntaje\:\ 50\r\n\ \ \ \ \ \ Pincha\ Ruedas\ puntaje\:\ 20\r\n\ @return\r\n
+numComments=4
