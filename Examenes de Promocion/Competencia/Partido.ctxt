@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Partido
+comment1.params=local\ visita
+comment1.target=Partido(Equipo,\ Equipo)
+comment1.text=\r\n\ Constructor\ con\ parametros.\ Representa\ un\ partido.\ Al\ iniciarse,\r\n\ el\ partido\ est\u00E1\ pendiente\r\n\ @param\ local\ equipo\ local\r\n\ @param\ visita\ equipo\ visitante\r\n\ @throws\ IllegalArgumentException\ cuando\ algun\ equipo\ es\ null\ o\ cuando\r\n\ ambos\ equipos\ son\ el\ mismo\ equipo\r\n
+comment2.params=
+comment2.target=Equipo\ getEquipoLocal()
+comment2.text=\r\n\ Getter\ del\ Equipo\ local\r\n\ @return\ el\ equipo\ local\r\n
+comment3.params=
+comment3.target=Equipo\ getEquipoVisitante()
+comment3.text=\r\n\ Getter\ del\ Equipo\ visitante\r\n\ @return\ el\ equipo\ visotante\r\n
+comment4.params=
+comment4.target=boolean\ disputado()
+comment4.text=\r\n\ Determina\ si\ el\ partido\ fue\ disputado.\ Un\ partido\ fue\ disputado\r\n\ cuando\ su\ resultado\ no\ est\u00E1\ pendiente.\r\n\ @return\ si\ el\ partido\ fue\ disputado\r\n
+comment5.params=
+comment5.target=Resultado\ getResultado()
+comment5.text=\r\n\ Devuelve\ el\ resultado\ de\ este\ partido\r\n\ @return\ el\ resultado\ de\ este\ partido\r\n
+comment6.params=resultado
+comment6.target=void\ setResultado(Resultado)
+comment6.text=\r\n\ Setea\ un\ resultado\ para\ este\ partido.\ \r\n\ @param\ resultado\ El\ resultado\ de\ este\ partido\r\n\ @throws\ IllegalArgumentException\ si\ el\ resultado\ es\ inv\u00E1lido\ (null)\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ Retorna\ una\ representaci\u00F3n\ como\ String\ del\ partido\ con\ el\ siguiente\ \r\n\ formato\:\r\n\ "Partido\:\ <equipo_local>\ vs.\ <equipo_visitante>\ [<resultado>]"\r\n\ \r\n\ \r\n\ Ej.\r\n\ "Partido\:\ boca\ vs.\ river\ [EMPATE]"\r\n\ \r\n
+numComments=8

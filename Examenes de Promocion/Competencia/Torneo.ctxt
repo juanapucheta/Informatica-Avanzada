@@ -1,0 +1,36 @@
+#BlueJ class context
+comment0.target=Torneo
+comment1.params=nombre
+comment1.target=Torneo(java.lang.String)
+comment1.text=\r\n\ Constructor\ con\ parametros.\r\n\ @param\ nombre\ El\ nombre\ del\ torneo\r\n
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment10.text=\r\n\ Retorna\ el\ torneo\ como\ String\ con\ el\ siguiente\ formato\r\n\ "Torneo\:\ <Nombre_del_troneo>\ (<cantidad_de_equipos>\ equipos)\ -\ [<equipo1>][<equipo2>][<equipo3>]"\r\n\ Ej.\ \r\n\ "Torneo\:\ Amistad\ (4\ equipos)\ -\ [BOCA][RIVER][TALLERES][BELGRANO]"\r\n\ \r\n\ @return\ el\ String\ con\ los\ equipos\r\n
+comment11.params=
+comment11.target=java.util.Map\ getPosiciones()
+comment11.text=\r\n\ Retorna\ un\ mapa\ de\ <Equipos,\ Desempenio>\ representando\ el\ desempe\u00F1o\r\n\ de\ cada\ equipo\ en\ este\ torneo.\r\n\ \r\n\ Utilice\ una\ implementaci\u00F3n\ de\ Desempenio\ que\ otorgue\ \r\n\ 2\ puntos\ por\ victoria,\ 1\ por\ empate\ y\ 0\ por\ derrota\r\n\r\n\ Ej.\r\n\ Para\ un\ torneo\ con\ equipos\ e1,e2,e3,e4\ y\ \r\n\ partidos\ \r\n\ \ p1\ \=\ e1\ vs.\ e2\ \ [LOCAL]\r\n\ \ p2\ \=\ e3\ vs.\ e4\ \ [EMPATE]\r\n\ \ p3\ \=\ e2\ vs.\ e3\ \ [VISITANTE]\r\n\ \ p4\ \=\ e4\ vs.\ e1\ \ [PENDIENTE]\r\n\ \ \r\n\ \ las\ posiciones\ deber\u00EDan\ ser\r\n\ \ e1\ ->\ 2\ puntos,\ 1\ partido\ \ jugado\ ,\ 1\ victoria\r\n\ \ e2\ ->\ 0\ puntos,\ 2\ partidos\ jugados,\ 2\ derrotas\r\n\ \ e3\ ->\ 3\ puntos,\ 2\ partidos\ jugados,\ 1\ victoria,\ 1\ empate\ \r\n\ \ e4\ ->\ 1\ punto\ ,\ 1\ partido\ \ jugado\ ,\ 1\ empate\ \r\n\ \ \r\n\ @return\ el\ mapa\r\n
+comment2.params=
+comment2.target=int\ getNumeroMaximoDeEquipos()
+comment2.text=\r\n\ Retorna\ la\ cantidad\ m\u00E1xima\ de\ equipos\ que\ podr\u00EDan\ disputar\r\n\ el\ torneo\r\n\ @return\ int\ con\ el\ numero\ maximo\ de\ equipos\ permitidos\r\n
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment3.text=\r\n\ \r\n\ @return\ el\ nombre\ del\ torneo\r\n
+comment4.params=
+comment4.target=void\ iniciarTorneo()
+comment4.text=\r\n\ Inicializa\ el\ torneo.\ Remueve\ todos\ los\ equipos\ y\ partidos\ del\ torneo\ \r\n
+comment5.params=e
+comment5.target=boolean\ addEquipo(Equipo)
+comment5.text=\r\n\ Agrega\ un\ equipo\ al\ torneo\ solo\ si\ no\ se\ supera\ el\ numero\ maximo\ de\ equipos\ permitido\ \r\n\ @param\ e\ el\ equipo\ a\ agregar\r\n\ @return\ true\ si\ se\ pudo\ agregar\ el\ equipo,\ false\ en\ caso\ contrario\r\n
+comment6.params=p
+comment6.target=void\ addPartido(Partido)
+comment6.text=\r\n\ Agrega\ un\ partido\ al\ torneo.\ Solo\ se\ pueden\ agregar\ partidos\ de\ equipos\ que\ pertenezcan\ al\ torneo\r\n\ @param\ p\ el\ partido\ a\ agregar\r\n\ @throws\ IllegalArgumentException\ si\ alguno\ de\ los\ equipos\ del\ partido\ no\ pertenece\ al\ torneo.\r\n
+comment7.params=
+comment7.target=int\ partidosDisputados()
+comment7.text=\r\n\ Retorna\ la\ cantidad\ de\ partidos\ DISPUTADOS\r\n\ @return\ la\ cantidad\ de\ partidos\ disputados\ del\ torneo.\r\n
+comment8.params=
+comment8.target=int\ cantidadDeEquipos()
+comment8.text=\r\n\ Retorna\ la\ cantidad\ de\ equipos\ en\ el\ torneo\r\n\ @return\ la\ cantidad\ de\ equipos\r\n
+comment9.params=
+comment9.target=int\ cantidadDePartidos()
+comment9.text=\r\n\ Retorna\ la\ cantidad\ de\ partidos\ TOTALES\ en\ el\ torneo\r\n\ @return\ la\ cantidad\ de\ partidos\r\n
+numComments=12
