@@ -1,0 +1,1 @@
+Los modelos de examen que se encuentran en esta carpeta no fueron resueltos por mí, los encontré en un drive donde no tenían autor especificado. Desconozco si son resoluciones correctas, estan aquí para ser referencia de lo que se puede llegar a tomar en un examen en esta materia.
