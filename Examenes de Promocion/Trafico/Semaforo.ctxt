@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Semaforo
+comment0.text=\r\n\ Logica\ de\ un\ semaforo\ de\ 2\ estados\:\ ROJO\ y\ VERDE\r\n
+comment1.params=estado_inicial
+comment1.target=Semaforo(ESTADOS)
+comment1.text=\r\n\ Inicializa\ el\ semaforo\ al\ estado\ inicial\r\n\ @param\ estado_inicial\:\ rojo\ o\ verde\r\n
+comment2.params=
+comment2.target=ESTADOS\ get_estado()
+comment2.text=\r\n\ Consulta\ el\ estado\ del\ semaforo\r\n\ @return\ rojo\ o\ verde\r\n
+comment3.params=nuevo_estado
+comment3.target=void\ set_estado(ESTADOS)
+comment3.text=\r\n\ Cambia\ el\ estado\ del\ semaforo\r\n\ @param\ nuevo_estado\ rojo\ o\ verde\r\n
+comment4.params=
+comment4.target=boolean\ esta_disponible()
+comment4.text=\r\n\ @return\ verdadero\ si\ el\ sem\u00E1foro\ est\u00E1\ en\ verede,\ falso\ si\ no\ lo\ est\u00E1\r\n
+numComments=5

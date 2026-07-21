@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Calle
+comment0.text=\r\n\ Modelo\ simplificado\ de\ una\ calle\ de\ 2\ vias\r\n
+comment1.params=nombre\ longitud
+comment1.target=Calle(java.lang.String,\ java.lang.Integer)
+comment1.text=\r\n\ Inicializacion\r\n\ @param\ nombre\ nombre\ de\ la\ calle\r\n\ @param\ longitud\ longitud\ m\u00E1xima\ disponible\r\n
+comment2.params=inte
+comment2.target=void\ agregar_interseccion(InterseccionInterface)
+comment2.text=\r\n\ Agrega\ una\ nueva\ interseccion\ a\ esta\ calle\r\n\ no\ puede\ contener\ intersecciones\ repetidas\r\n\ @param\ inte\ Interseccion\ a\ ser\ agregada\ \r\n
+comment3.params=
+comment3.target=java.lang.Integer\ get_longitud()
+comment3.text=\r\n\r\n\ @return\ longitud\ de\ la\ calle\r\n
+comment4.params=
+comment4.target=java.util.List\ get_intersecciones()
+comment4.text=\r\n\r\n\ @return\ lista\ con\ todas\ las\ intersecciones\ por\ las\ que\ es\ afectada\ esta\ calle\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ @return\ devuelve\ el\ nombre\ de\ la\ calle\r\n
+numComments=6

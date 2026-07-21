@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Interseccion2Calles
+comment0.text=\r\n\ Implementacion\ de\ la\ Interfaz\ de\ Interseccion\ para\ el\ caso\ de\ una\ esquina\ de\ solo\ dos\ calles\r\n
+comment1.params=a\ b\ altura_en_a\ altura_en_b
+comment1.target=Interseccion2Calles(Calle,\ Calle,\ java.lang.Integer,\ java.lang.Integer)
+comment2.params=
+comment2.target=void\ registrar_interseccion()
+comment3.params=calle
+comment3.target=boolean\ get_paso(Calle)
+comment4.params=calle
+comment4.target=java.lang.Integer\ get_altura_calle(Calle)
+comment5.params=
+comment5.target=void\ next_estado_semaforo()
+comment5.text=\r\n\ Invierte\ el\ estado\ de\ los\ dos\ sem\u00E1foros\ pertenecientes\ a\ la\ intersecci\u00F3n\r\n\ Toma\ la\ exclusion\ mutua\ del\ Mapa\ para\ sincronizar\ con\ la\ circulacion\ de\ los\ autos\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

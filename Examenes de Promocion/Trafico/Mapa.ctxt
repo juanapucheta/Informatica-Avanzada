@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Mapa
+comment0.text=\r\n\ Logica\ que\ centraliza\ la\ informacion\ de\ los\ movimientos\ de\ los\ autos\r\n\ Evita\ que\ los\ autos\ choquen\ entre\ s\u00ED\ o\ que\ intenten\ cruzar\ un\ sem\u00E1foro\ en\ rojo\r\n
+comment1.params=
+comment1.target=Mapa()
+comment2.params=auto
+comment2.target=void\ agregar_auto(Auto)
+comment2.text=\r\n\ Agrego\ un\ nuevo\ auto\ para\ ser\ controlado\r\n\ @param\ auto\r\n
+comment3.params=
+comment3.target=java.util.List\ get_autos()
+comment3.text=\r\n\ Devuelve\ la\ lista\ de\ autos\ en\ mapa\r\n
+comment4.params=
+comment4.target=void\ borrar_autos()
+comment4.text=\r\n\ Elimina\ la\ lista\ de\ autos\ registrados\ en\ el\ mapa\r\n
+comment5.params=auto
+comment5.target=boolean\ auto_en_el_camino(Auto)
+comment5.text=\r\n\ Se\ fija\ en\ la\ lista\ de\ autos\ disponible\ si\ hay\ alguno\ que\ cumpla\ las\ siguientes\ condiciones\r\n\ \ \ \ \ \ 1.\ Va\ en\ la\ misma\ direccion\ que\ el\ auto\ consultado\r\n\ \ \ \ \ \ 2.\ Esta\ en\ la\ misma\ calle\r\n\ \ \ \ \ \ 3.\ Esta\ en\ alguna\ posicion\ por\ lo\ cual\ el\ auto\ pasaria\ en\ su\ proximo\ movimiento\r\n\ \ \ \ \ \ Recomendacion\:\ utilizar\ metodos\ de\ la\ clase\ Auto\r\n\ @param\ auto\r\n\ @return\ verdadero\ si\ algun\ auto\ cumple\ la\ condicion,\ falso\ si\ no\ la\ cumple\r\n
+comment6.params=auto
+comment6.target=boolean\ interseccion_disponible(Auto)
+comment6.text=\r\n\ Se\ fija\ si\ dentro\ de\ las\ intersecciones\ que\ hay\ en\ la\ calle\ actual\ del\ auto\:\r\n\ \ \ \ \ si\ hay\ alguna\ interseccion\ en\ la\ trayectoria\ del\ auto\:\r\n\ \ \ \ \ \ \ \ \ \ verifica\ que\ el\ semaforo\ este\ en\ verde\ para\ la\ calle\ en\ la\ cual\ \r\n\ \ \ \ \ \ \ \ \ \ transita\ el\ auto\ (true\ si\ esta\ en\ verde,\ falso\ si\ no)\r\n\ \ \ \ \ de\ lo\ contrario\:\r\n\ \ \ \ \ \ \ \ \ \ devuelve\ verdadero\r\n\ \ \ \ \r\n\ @param\ auto\r\n\ @return\ verdadero\ si\ no\ hay\ ninguna\ interseccion\ con\ semaforo\ en\ rojo\ en\ el\ camino,\r\n\ de\ lo\ contrario\ devuelve\ falso\r\n
+comment7.params=auto
+comment7.target=boolean\ comprobar_movimiento(Auto)
+comment7.text=\r\n\ Logica\ de\ comprobacion\ de\ movimientos\ de\ los\ autos\r\n\ Evalua\:\r\n\ \ \ \ \ 1.\ Que\ no\ haya\ ningun\ auto\ en\ el\ camino\r\n\ \ \ \ \ 2.\ Que\ no\ tenga\ semaforo\ en\ rojo\ en\ ninguna\ intereseccion\r\n\ Recomendacion\:\ Utilizar\ m\u00E9todos\ privados\ de\ la\ misma\ clase\r\n\ @param\ auto\r\n\ @return\ verdadero\ si\ el\ movimiento\ a\ realizar\ est\u00E1\ permitido,\ falso\ si\ no\ lo\ est\u00E1\r\n
+numComments=8

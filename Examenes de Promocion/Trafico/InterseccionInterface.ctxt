@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=InterseccionInterface
+comment0.text=\r\n\ Esta\ clase\ provee\ una\ interfaz\ para\ definir\ intersecciones\ de\ distintos\ tipos\r\n\ Su\ principal\ tarea\ es\ el\ de\ crear\ y\ coordinar\ sem\u00E1foros\ para\ cada\ calle\ y\ de\ poder\ determinar\r\n\ que\ calle\ tiene\ paso\ en\ un\ determinado\ momento\r\n
+comment1.params=
+comment1.target=void\ registrar_interseccion()
+comment1.text=\r\n\ Regitrarse\ a\ las\ calles\ integrantes\ para\ que\ los\ autos\ puedan\ saber\ en\ donde\ estan\ ubicados\r\n\ los\ sem\u00E1foros\r\n
+comment2.params=calle
+comment2.target=boolean\ get_paso(Calle)
+comment2.text=\r\n\ Determina\ si\ la\ calle\ consultada\ tiene\ habilitado\ el\ cruce\ o\ no\r\n\ @param\ calle\:\ calle\ de\ la\ cu\u00E1l\ se\ est\u00E1\ consultando\r\n\ @return\:\ verdadero\ si\ tiene\ paso,\ falso\ si\ no\r\n\ @throws\ CalleIncorrectaException\:\ si\ se\ consulta\ por\ una\ calle\ que\ no\ forma\ parte\ de\ la\ Interseccion\r\n
+comment3.params=calle
+comment3.target=java.lang.Integer\ get_altura_calle(Calle)
+comment3.text=\r\n\ Para\ un\ determinada\ calle\ retorna\ la\ altura\ en\ la\ cual\ se\ encuentra\ esta\ interseccion\r\n\ @param\ calle\r\n\ @return\r\n\ @throws\ CalleIncorrectaException\r\n
+comment4.params=
+comment4.target=void\ next_estado_semaforo()
+comment4.text=\r\n\ Setea\ los\ semaforos\ componentes\ en\ el\ siguiente\ estado.\r\n\ Representa\ el\ cambio\ de\ un\ estado\ al\ siguiente\ en\ la\ maquina\ de\ estados\ de\ la\ interseccion\r\n\ depende\ del\ tipo\ de\ interseccion\r\n
+numComments=5
