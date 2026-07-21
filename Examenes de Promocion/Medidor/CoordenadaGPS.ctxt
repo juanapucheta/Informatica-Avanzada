@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=latitud\ longitud
+comment0.target=CoordenadaGPS(double,\ double)
+comment0.text=\n\ Constructor\ \n\ @param\ latitud\ La\ latitud\ de\ la\ ubicaci\uFFFDn,\ entre\ -90\ y\ +90\n\ @param\ longitud\ La\ longitud\ de\ la\ ubicaci\uFFFDn,\ entre\ -180\ y\ 180\n\ @throws\ IllegalArgumentException\ si\ la\ ubicaci\uFFFDn\ est\uFFFD\ fuera\ de\ los\ l\uFFFDmites\n
+comment1.params=
+comment1.target=double\ getLatitud()
+comment1.text=\n\ \n\ @return\ La\ latitud\ de\ la\ ubicaci\uFFFDn,\ entre\ -90\ y\ +90\n
+comment2.params=
+comment2.target=double\ getLongitud()
+comment2.text=\n\ \n\ @return\ La\ longitud\ de\ la\ ubicaci\uFFFDn,\ entre\ -180\ y\ 180\n
+numComments=3

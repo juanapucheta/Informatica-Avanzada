@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=coordenadas
+comment0.target=MedidorIndustrial(CoordenadaGPS)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ MedidorIndustrial\n
+comment1.params=
+comment1.target=TipoMedidor\ getTipoMedidor()
+comment1.text=\n\ \n\ @return\ el\ TipoMedido\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\n\ @return\ la\ DESCRIPCION\ del\ Medidor\n
+numComments=3
