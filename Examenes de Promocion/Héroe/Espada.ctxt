@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Espada
+comment0.text=Modela\ una\ espada.
+comment1.params=
+comment1.target=Espada()
+comment2.params=
+comment2.target=void\ Atacar()
+comment2.text=\ Ejecuta\ el\ ataque.\ Tiene\ efecto\ .\r\n\ \r\n\ \ @throws\ ArmaDescargadaException\ Nunca\ se\ produce.\r\n
+numComments=3

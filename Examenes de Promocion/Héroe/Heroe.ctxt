@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Heroe
+comment0.text=\ Esta\ clase\ modela\ al\ personaje\ principal\ de\ un\ juego\ de\ rol\r\n
+comment1.params=
+comment1.target=Heroe()
+comment1.text=\ Inicializa\ al\ heroe\ con\ el\ maximo\ nivel\ de\ vida.\r\n\ \ \ El\ objeto\ seleccionado\ inicial\ es\ la\ espada\ de\ acero.\r\n\ \ \ La\ espada\ de\ acero\ es\ la\ \u00FAnica\ arma\ que\ persiste\ durante\r\n\ \ \ todo\ el\ juego\ y\ no\ puede\ quitarse\ de\ la\ bolsa.\r\n
+comment2.params=obj
+comment2.target=void\ TomarObjetoDelSuelo(Objetos)
+comment2.text=\ Recolecta\ un\ objeto\ y\ lo\ agrega\ a\ la\ bolsa\ siempre\ y\r\n\ \ cuando\ haya\ lugar\ suficiente.\r\n\ \ @param\ obj\ El\ objeto\ para\ agregar\ en\ la\ bolsa\r\n
+comment3.params=nombre
+comment3.target=void\ ElegirArma(java.lang.String)
+comment3.text=\ Permite\ cambiar\ el\ arma\ que\ tiene\ el\ h\u00E9roe\ en\ sus\ manos.\r\n\ \ Si\ el\ arma\ elegida\ no\ est\u00E1\ en\ la\ bolsa,\ mantiene\ en\ sus\r\n\ \ manos\ el\ arma\ actual.\r\n\ \ @param\ nombre\ El\ nombre\ del\ arma\ a\ tomar\ de\ la\ bolsa.\r\n
+comment4.params=
+comment4.target=void\ Atacar()
+comment4.text=\ Hace\ que\ el\ h\u00E9roe\ ataque\ a\ un\ enemigo.\ Solo\ es\ viable\ cuando\r\n\ \ tiene\ un\ arma\ lista\ para\ usar\ en\ sus\ manos.\r\n\ \ @throws\ NoEsArmaException\ Cuando\ no\ tiene\ un\ arma\ en\ sus\ manos.\r\n\ \ @throws\ ArmaDescargadaException\ Cuando\ el\ arma\ no\ tiene\ municiones.\r\n
+comment5.params=nombre
+comment5.target=void\ RecargarArma(java.lang.String)
+comment5.text=\ Permite\ cambiar\ la\ munici\u00F3n\ del\ arma\ que\ tiene\ el\ h\u00E9roe\ en\ sus\ manos.\r\n\ \ Si\ es\ posible\ el\ cambio,\ la\ munici\u00F3n\ del\ arma\ se\ guarda\ en\ la\ bolsa\ y\r\n\ \ se\ establece\ la\ nueva\ munici\u00F3n.\ En\ caso\ contrario,\ se\ deja\ el\ arma\r\n\ \ como\ estaba.\r\n\ \ @param\ nombre\ La\ munici\u00F3n\ a\ buscar\ en\ la\ bolsa.\r\n
+comment6.params=
+comment6.target=Objetos\ getObjeto()
+comment7.params=objeto
+comment7.target=void\ setObjeto(Objetos)
+comment8.params=
+comment8.target=Bolsa\ getBolsa()
+numComments=9

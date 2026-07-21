@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Flechas
+comment0.text=Modela\ un\ tipo\ de\ flechas.\ Siempre\ son\ un\ grupo\ de\ flechas.
+comment1.params=
+comment1.target=Flechas()
+comment1.text=Crea\ un\ conjunto\ de\ flechas\ gen\u00E9ricas
+comment2.params=
+comment2.target=void\ UsarFlecha()
+comment2.text=\ Descuenta\ una\ flecha\ del\ total.\r\n\ \ @throws\ ArmaDescargadaException\ Cuando\ no\ hay\ m\u00E1s\ flechas.\r\n
+comment3.params=
+comment3.target=java.lang.Integer\ getDanio()
+comment4.params=danio
+comment4.target=void\ setDanio(java.lang.Integer)
+comment5.params=
+comment5.target=java.lang.Integer\ getCantidad()
+comment6.params=cantidad
+comment6.target=void\ setCantidad(java.lang.Integer)
+numComments=7

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Armas
+comment0.text=Modela\ cualquier\ tipo\ de\ arma.
+comment1.params=
+comment1.target=void\ Atacar()
+comment1.text=\r\n\ El\ uso\ de\ un\ arma\ puede\ desgastarla\ o\ consumir\ municiones,\r\n\ por\ eso\ la\ implementaci\u00F3n\ depende\ del\ arma\r\n\ @throws\ ArmaDescargadaException\ En\ caso\ que\ no\ haya\ municiones\ suficientes\r\n
+comment2.params=obj
+comment2.target=Objetos\ RecargarArma(Objetos)
+comment2.text=\r\n\ No\ todas\ las\ armas\ se\ puede\ recargar.\ En\ caso\ de\ que\ el\ arma\r\n\ sea\ recargable,\ debe\ sobreescribir\ este\ m\u00E9todo.\r\n\ @param\ obj\ La\ munici\u00F3n\ a\ recargar\r\n\ @throws\ ArmaNoRecargableException\ En\ caso\ de\ aplicarlo\ sobre\ un\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ arma\ no\ recargable\r\n
+comment3.params=
+comment3.target=java.lang.Integer\ getAlcance()
+comment4.params=alcance
+comment4.target=void\ setAlcance(java.lang.Integer)
+comment5.params=
+comment5.target=java.lang.Integer\ getDanio()
+comment6.params=danio
+comment6.target=void\ setDanio(java.lang.Integer)
+numComments=7

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Ballesta
+comment0.text=Modela\ una\ ballesta.
+comment1.params=
+comment1.target=Ballesta()
+comment1.text=\r\n\ La\ ballesta\ se\ inicia\ con\ 10\ flechas\ de\ madera.\ Las\ flechas\ de\ madera\r\n\ tienen\ peso\ 1\ y\ da\u00F1o\ 1.\r\n
+comment2.params=
+comment2.target=Flechas\ getFlechas()
+comment3.params=flecha
+comment3.target=void\ setFlechas(Flechas)
+comment3.text=\r\n\ Carga\ las\ nuevas\ flechas\ en\ la\ ballesta.\r\n\ Debe\ actualizarse\ el\ da\u00F1o\ a\ producir.\ \r\n\ @param\ flecha\ Las\ flechas\ a\ cargar\r\n
+comment4.params=
+comment4.target=void\ Atacar()
+comment4.text=\r\n\ Ejecuta\ el\ ataque\ descargando\ una\ flecha\ de\ la\ ballesta.\ Si\ no\ hay\ m\u00E1s\r\n\ flechas\ lanza\ ArmaDescargadaException.\r\n\ \r\n\ @throws\ ArmaDescargadaException\ Cuando\ no\ hay\ flechas\ para\ disparar.\r\n
+comment5.params=obj
+comment5.target=Objetos\ RecargarArma(Objetos)
+comment5.text=\r\n\ Carga\ la\ ballesta\ con\ las\ flechas\ indicadas.\ Si\ la\ ballesta\ tiene\r\n\ flechas,\ las\ devuelve\ a\ la\ bolsa.\r\n\ \r\n\ @param\ obj\ Las\ flechas\ a\ cargar\r\n\ @return\ Las\ flechas\ que\ estaban\ en\ la\ ballesta\r\n
+numComments=6
