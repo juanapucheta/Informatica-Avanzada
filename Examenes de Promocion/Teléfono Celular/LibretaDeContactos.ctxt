@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LibretaDeContactos()
+comment0.text=\r\n\ Cosnstructor\ de\ una\ libreta\ de\ contactos\ vac\r\n
+comment1.params=contacto
+comment1.target=void\ agregarContacto(Contacto)
+comment1.text=\r\n\ Agrega\ un\ contacto\ a\ la\ libreta\r\n\ @param\ contacto\r\n
+comment2.params=numero
+comment2.target=Contacto\ getContactoPorNumero(java.lang.String)
+comment2.text=\r\n\ Devuelve\ el\ contacto\ cuyo\ numero\ es\ pasado\ como\ argumento\r\n\ @param\ numero\r\n\ @return\r\n
+comment3.params=contacto
+comment3.target=void\ borrarContacto(Contacto)
+comment3.text=\r\n\ Remueve\ el\ contacto\ de\ la\ libreta\ de\ contactos\r\n\ @param\ contacto\r\n
+comment4.params=
+comment4.target=java.util.List\ getContactos()
+comment4.text=\r\n\ Devuelve\ una\ lista\ con\ todos\ los\ contactos\ de\ la\ libreta\r\n\ @return\r\n
+numComments=5

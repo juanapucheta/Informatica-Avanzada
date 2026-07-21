@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=anio\ mes\ dia\ hora\ minuto
+comment0.target=Fecha(int,\ int,\ int,\ int,\ int)
+comment0.text=\r\n\ Lanza\ una\ IllegalArgumentException\ cuando\ la\ fecha\ es\ invalida\r\n\ Anio\ debe\ ser\ mayor\ a\ 2012.\r\n\ Hora\ en\ formato\ 24hs\r\n\ Validar\ mes\ y\ dia\ (no\ considera\ a\uFFFDos\ bisiestos.\ Ej,\ 29\ FEB\ es\ invalido)\r\n\ \r\n\ Ej.\ fechas\ invalidas\:\ 1999,12,12,12,12\ ;\ 2010,2,29,21,6;\ 2012,1,31,24,01\r\n\ \r\n\ @param\ anio\ \r\n\ @param\ mes\r\n\ @param\ dia\r\n\ @param\ hora\r\n\ @param\ minuto\r\n
+comment1.params=
+comment1.target=int\ getAnio()
+comment2.params=
+comment2.target=int\ getMes()
+comment3.params=
+comment3.target=int\ getDia()
+comment4.params=
+comment4.target=int\ getHora()
+comment5.params=
+comment5.target=int\ getMinuto()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

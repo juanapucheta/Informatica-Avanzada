@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=llamadas
+comment0.target=java.lang.String\ convertirListaComoString(java.util.ArrayList)
+comment0.text=\r\n\ Devuelve\ un\ String\ con\ el\ detalle\ de\ las\ llamadas,\ una\ llamada\ por\ linea\r\n\ Ej\:\r\n"2013/05/06\ 21\:44,\ 3514801234,\ ENTRANTE,\ 05\:12\r\n2013/01/30\ 01\:14,\ 1161293091,\ SALIENTE,\ 12\:00\r\n2013/01/30\ 01\:28,\ 1161293091,\ SALIENTE,\ 02\:10\r\n2013/01/30\ 01\:42,\ 1161293091,\ ENTRANTE,\ 12\:00\r\n"\r\n\ \ \r\n\ @param\ llamadas\r\n\ @return\r\n
+comment1.params=llamadas\ cont
+comment1.target=java.lang.String\ convertirListaComoStringAmigable(java.util.ArrayList,\ LibretaDeContactos)
+comment1.text=\r\n\ Devuelve\ un\ String\ con\ el\ detalle\ de\ las\ llamadas,\ si\ el\ numero\ corresponde\r\n\ a\ un\ contacto,\ reemplaza\ el\ numero\ por\ el\ nombre\ del\ contacto.\ si\ no\ est\uFFFD\ en\r\n\ el\ la\ agenda\ de\ contactos,\ imprime\ el\ numero\ \r\n\ \r\n\ Una\ llamada\ por\ linea\r\n\ Ej\:\r\n\ \r\n"2013/05/06\ 21\:44,\ 3514801234,\ ENTRANTE,\ 05\:12\r\n2013/01/30\ 01\:14,\ Juan\ Perez,\ SALIENTE,\ 12\:00\r\n2013/01/30\ 01\:28,\ Julieta\ Alvarez,\ SALIENTE,\ 02\:10\r\n2013/01/30\ 01\:42,\ 1161293091,\ ENTRANTE,\ 12\:00\r\n"\r\n\ \ \r\n\ @param\ llamadas\r\n\ @return\r\n
+comment2.params=m
+comment2.target=java.lang.String\ convertirMapaEstadisticaComoString(java.util.HashMap)
+comment2.text=\r\n\ Devuelve\ un\ String\ con\ las\ estadisticas\ de\ cada\ numero\ en\ el\ mapa\r\n\ Una\ numero\ por\ linea,\ con\ el\ formato\:\r\n\ <numero>\:\ Llamadas\ salientes\:\ <cantidadLlamadasSalientes>\ (<duracionSalientesEnSegundos>)\ -\ Llamadas\ entrantes\:\ <cantidadLlamadasEntrantes>\ (<duraciondeEntrantesEnSegundos>)\r\n\ \r\n\ Ej\:\r\n\ \r\n"3514801234\:\ Llamadas\ salientes\:\ 5(123)\ -\ Llamadas\ entrantes\:\ 1(65)\r\n3515597222\:\ Llamadas\ salientes\:\ 2(1315)\ -\ Llamadas\ entrantes\:\ 4(165)\r\n3516557177\:\ Llamadas\ salientes\:\ 16(2312)\ -\ Llamadas\ entrantes\:\ 12(657)\r\n"\r\n\ \ \r\n\ @param\ llamadas\r\n\ @return\r\n
+numComments=3

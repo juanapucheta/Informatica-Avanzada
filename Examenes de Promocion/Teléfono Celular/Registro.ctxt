@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Registro()
+comment1.params=
+comment1.target=java.util.List\ getRegistroCompleto()
+comment2.params=llamada
+comment2.target=void\ agregarLlamada(Llamada)
+comment3.params=
+comment3.target=void\ limpiarRegistro()
+comment4.params=minInicial\ segInicial\ minFinal\ segFinal
+comment4.target=java.util.List\ getLlamadasPorDuracion(int,\ int,\ int,\ int)
+comment4.text=\r\n\ Devuelve\ una\ lista\ con\ las\ llamadas\ cuya\ duraci\uFFFDn\ est\uFFFD\ comprendida\ entre\r\n\ \ \r\n\ \ [minInicial\:segInicial]\ y\ [minFinal\:segFinal]\ \r\n\r\n\ Ej.\ minInicial\ \=\ 1,\ segInicial\=30,\ minFinal\=3,\ segFinal\=45,\ la\ lista\ contendr\uFFFD\ solo\ llamdas\ cuya\ duraci\uFFFDn\ est\uFFFD\ comprendida\ entre\r\n\ un\ minuto\ treinga\ segundos\ y\ tres\ minutos\ cuarenta\ y\ cinco\ segundos.\r\n\r\n\ Una\ argumento\ invalido\ es\ cuando\ par\uFFFDmetro\ valor\ es\ negativo,\ o\ cuando\ seg\ >\ 59\ o\ cuando\ el\ tiempo\ incial\ es\ mayor\ que\ el\ final\ \r\n\ \r\n\ \ valido\ contiene\ 10\ digitos\ (luego\ de\ remover\ espacios\ previos\ o\ posteriores\ si\ los\ hubiera).\r\n\ \r\n\ \r\n\ @param\ numero\r\n\ @return\ Lista\ de\ llamadas\ \r\n\ @throws\ ParametrosInconsistentesException\ cuando\ el\ numero\ es\ null\ o\ con\ un\ formato\ invalido.\r\n
+comment5.params=tipo
+comment5.target=java.util.List\ getLlamadasPorTipo(TipoDeLlamada)
+comment5.text=\r\n\ Devuelve\ una\ lista\ con\ las\ llamadas\ salientes\ o\ entrantes\r\n\ @param\ tipo\ tipo\ de\ Llamada\ ENTRANTE/SALIENTE\r\n\ @return\ Lista\ de\ llamadas\r\n
+comment6.params=
+comment6.target=int\ getDuracionTotalLlamadasDelRegistro()
+comment6.text=\r\n\ Devulelve\ un\ entero\ con\ la\ duracion\ total\ de\ las\ llamadas\ saliente\ y\ entrantes,\ en\ segundos\r\n\ @return\ duracion\ total\ de\ llmadas\r\n
+comment7.params=
+comment7.target=java.util.Map\ getMapaDeEstadisticasDelRegistroCompleto()
+comment7.text=\r\n\ Devuelve\ un\ mapa\ <String,\ EstadisticasNumero>\ \r\n\ con\ las\ estadisticas\ de\ cada\ numero\ del\ registro\ de\ llamadas.\r\n\ \r\n\ Ej.\:\ Si\ en\ el\ registro\ de\ llamadas\ contiene\ 10\ llamadas,\ 5\ al\ numero\ A,\r\n\ 3\ del\ numero\ B,\ y\ 2\ del\ numero\ C,\ el\ mapa\ deber\uFFFD\ contener\ 3\ entradas,\r\n\ con\ las\ estad\uFFFDsticas\ de\ cada\ numero\ (A,\ B\ y\ C)\r\n\r\n\ @return\ mapa\ de\ estadisticas\r\n
+comment8.params=llamadas\ numero
+comment8.target=EstadisticasNumero\ getEstadisticasPorNumero(java.util.List,\ java.lang.String)
+comment8.text=\r\n\ Devuelve\ las\ estad\uFFFDsticas\ de\ la\ lista\ de\ llamados\ para\ un\ numero\ en\ particular\ \r\n\ \r\n\ @param\ llamadas\r\n\ @return\r\n
+numComments=9
