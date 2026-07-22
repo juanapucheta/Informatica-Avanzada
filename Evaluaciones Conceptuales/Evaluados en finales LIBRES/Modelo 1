@@ -1,0 +1,139 @@
+// Implemente getter y setter de la variable especificada
+// 15 / 15
+public class Materia {
+  // Variables
+  private int horainicio;
+  //Constructor
+  public Materia (int horainicio){
+    this.horainicio = horainicio;
+  }
+/**
+* si el argumento horainicio es valido, setea el valor y retorna true
+* Si el valor es invalido, ignora el valor y retorna false
+* @param horainicio. La horainicio valida debe ser estar entre las 9 y las 18 inclusive.
+*/
+  public boolean setHoraInicio(int horainicio){
+    if(horainicio>=9 && horainicio<=18){
+      this.horainicio=horainicio;
+      return true;
+    }
+  return false;
+  }
+/**
+* Retorna el valor de matricula
+*/
+  public int getHoraInicio (){
+    return horainicio;
+  }
+}
+
+// Para la clase especificada, implementar public HashSet<Persona> aptosParaVacunacion (
+//  Asuma que la clase Persona implementa los métodos: public int getEdad (), public int getDni ()
+// 15 / 15
+public class Evaluacion {
+  public ArrayList<Persona> personas;
+  //Constructor
+  public Evaluacion () {
+    personas = new ArrayList<Persona>();
+  }
+/**
+* Devuelve un HashSet con todas las personas mayores o iguales a 50 anios
+* y menores de 70 anios.
+*/
+  public HashSet<Persona> aptosParaVacunacion ( ){
+  HashSet<Persona> aptos= new HashSet<Persona>();
+  for(Persona p : personas){
+    if(p.getEdad()>= 50 && p.getEdad()<70){
+      aptos.add(p);
+    }
+  }
+  return aptos;
+  }
+}
+
+// Se tiene la siguiente clase
+// 10 / 10
+public class A {
+private static int k = 0;
+private int i;
+public A(int j){
+i = j;
+}
+public void m1(int i) {
+A aux = new A(0);
+aux.m2(i);
+k = k+i+1;
+}
+public void m2(int i) {
+this.i += i;
+i = i*2;
+k = k+i;
+}
+}
+
+// Se ejecutan las siguientes instrucciones
+A a = new A(2);
+a.m2(4);
+a.m2(5);
+a.m2(2)
+
+// Indique el valor que de la variable de clase k. K = 22
+
+// Una empresa del alquiler de autos posee diferentes alternativas de alquiler para sus clientes. Los tipos de autos están representados en el
+// siguiente enumerado: public enum Auto {ECONOMICO, MEDIANO, GRANDE, LUJO, LIMUSINA;}
+// Implemente la clase Catalogo y los métodos definidos. Debe contener una colección del tipo HashMap que contenga tipo de auto y precio de
+// alquiler.
+// 15 / 15
+
+import java.util.HashMap;
+public class Catalogo {
+  HashMap <Auto,Integer> catalogo;
+/**
+* Inicializa un HashMap para almacenar todos los autos
+* del enumerado y el precio de alquiler. Debe asignar
+* precio por defecto 1500
+**/
+  public Catalogo(){
+    catalogo=new HashMap<Auto, Integer>();
+    for(Auto a : Auto.values()){
+      catalogo.put(a, 1500);
+    }
+  }
+/**
+* Ajusta el precio de alquiler de un auto en particular
+**/
+  public void setPrecio (Auto a, int precio){
+    catalogo.put(a,precio);
+  }
+/**
+* Retorna el precio de alquiler de un auto en particular
+**/
+  public int getPrecio(Auto a){
+    return catalogo.get(a);
+  }
+/**
+* Retorna el HashMap Catalogo
+**/
+  public HashMap<Auto,Integer> getCatalogo(){
+    return catalogo;
+  }
+}
+
+// Considere el siguiente diagrama de clases, en donde un ClientePremium es un tipo especial de Cliente que posee un descuento en sus
+// compras.
+// Codifique la clase ClientePremium tal que extienda de la clase Cliente, e implemente el constructor y el siguiente getter:
+// public ClientePremium(String nombre, int descuento); public int getDescuento();
+// 15 / 15
+
+public class ClientePremium extends Cliente {
+  Integer descuento;//Implemente los siguientes metodos
+  public ClientePremium(String nombre, int descuento) {
+    super(nombre);
+    this.descuento=descuento;
+  }
+  public int getDescuento() {
+    return descuento;
+  }
+}
+
+
