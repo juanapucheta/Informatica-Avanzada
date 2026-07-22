@@ -141,5 +141,22 @@ public class Mortero extends Armamento{
 
 // Dado el siguiente diagrama UML implemente los métodos indicados y reemplace "???" por lo que corresponda. 
 // System.out.println(moviles.getTerrestres().size());
-
-
+import java.util.ArrayList;
+public class Transportes {
+    ArrayList<Vehiculo> moviles;
+    public Transportes () {
+        moviles = new ArrayList<Vehiculo>();
+    }
+        public void addMovil (Vehiculo v) {
+        moviles.add(v);
+    }
+    public ArrayList<Terrestre> getTerrestres () {
+        ArrayList<Terrestre> terrestres = new ArrayList<Terrestre>();
+        for (Vehiculo v : moviles) {
+            if (v.getMedio().equals(Tipo.TERRESTRE)) {
+                terrestres.add((Terrestre) v);
+            }
+        }
+        return terrestres;
+    }
+}
