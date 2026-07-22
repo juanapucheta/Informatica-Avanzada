@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Silo
+comment0.text=\r\n\ Modela\ un\ silo,\ un\ tipo\ de\ recipiente\ que\ almacena\ un\ \u00FAnico\r\n\ tipo\ de\ ingrediente.\r\n\ Clase\ resuelta\ por\ Juana\ Pucheta\ con\ apoyo\ en\ Claude.\ Puntaje\ 16\ /\ 16\r\n
+comment1.params=ingredienteAlmacenado\ capacidadMaxima
+comment1.target=Silo(Ingrediente,\ int)
+comment1.text=\r\n\ Constructor\ con\ ingrediente\ y\ capacidad\ m\u00E1xima.\r\n\r\n\ @param\ ingredienteAlmacenado\ el\ ingrediente\ que\ almacena\ el\ silo\r\n\ @param\ capacidadMaxima\ la\ capacidad\ m\u00E1xima\ de\ este\ silo\r\n\ @throws\ IllegalArgumentException\ si\ el\ ingrediente\ es\ null,\r\n\ o\ si\ la\ capacidad\ m\u00E1xima\ es\ negativa\ o\ excede\ la\ capacidad\r\n\ m\u00E1xima\ por\ defecto\r\n
+comment2.params=ingredienteAlmacenado
+comment2.target=Silo(Ingrediente)
+comment2.text=\r\n\ Constructor\ con\ ingrediente.\ Setea\ la\ capacidad\ m\u00E1xima\ al\r\n\ valor\ por\ defecto.\r\n\r\n\ @param\ ingredienteAlmacenado\ el\ ingrediente\ que\ almacena\ el\ silo\r\n\ @throws\ IllegalArgumentException\ si\ el\ ingrediente\ es\ null\r\n
+comment3.params=
+comment3.target=Ingrediente\ getTipoIngredienteAlmacenado()
+comment3.text=\r\n\ Devuelve\ el\ tipo\ de\ ingrediente\ que\ almacena\ el\ silo\r\n\r\n\ @return\ el\ ingrediente\ almacenado\r\n
+comment4.params=cantidadAgregada
+comment4.target=void\ agregar(int)
+comment4.text=\r\n\ Agrega\ contenido\ al\ silo\r\n\r\n\ @param\ cantidadAgregada\ la\ cantidad\ de\ contenido\ a\ agregar\r\n\ @throws\ CapacidadExcedidaException\ cuando\ intenta\ agregarse\r\n\ mas\ contenido\ del\ que\ el\ silo\ puede\ alojar\r\n\ @throws\ IllegalArgumentException\ cuando\ la\ cantidad\ a\r\n\ agregar\ es\ un\ valor\ negativo\r\n
+comment5.params=cantidadAExtraer
+comment5.target=void\ extraer(int)
+comment5.text=\r\n\ Extrae\ contenido\ del\ silo\r\n\r\n\ @param\ cantidadAExtraer\ la\ cantidad\ a\ extraer\r\n\ @throws\ CapacidadExcedidaException\ cuando\ intenta\ extraerse\r\n\ una\ cantidad\ mayor\ a\ la\ disponible\ en\ el\ silo\r\n\ @throws\ IllegalArgumentException\ cuando\ la\ cantidad\ a\r\n\ extraer\ es\ un\ valor\ negativo\r\n
+numComments=6

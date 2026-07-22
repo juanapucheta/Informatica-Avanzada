@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Receta
+comment1.params=
+comment1.target=Receta()
+comment2.params=
+comment2.target=java.util.Map\ getMapaDeIngredientes()
+comment2.text=\r\n\ Devuelve\ el\ mapa\ de\ ingredientes\ de\ la\ receta\r\n\r\n\ @return\r\n
+comment3.params=ing\ cantidad
+comment3.target=void\ agregarIngrediente(Ingrediente,\ java.lang.Integer)
+comment3.text=\r\n\ Agrega\ un\ ingrediente\ a\ la\ receta\r\n\r\n\ @param\ ing\ el\ Ingrediente\ a\ agregar\ a\ la\ receta\r\n\ @param\ cantidad\ la\ cantidad\ de\ ingrediente\ a\ agregar\ a\ la\ receta\r\n\ @throws\ IllegalArgumentException\ cuando\ el\ ingrediente\ o\ la\r\n\ cantidad\ de\ ingredinte\ a\ agregar\ no\ es\ valida\ (ej.\ negativa)\r\n
+comment4.params=
+comment4.target=java.util.List\ getIngredientes()
+comment4.text=\r\n\ Obtiene\ la\ lista\ de\ ingredientes\ de\ esta\ receta\r\n\r\n\ @return\ la\ lista\ de\ ingredientes\ de\ la\ receta\r\n
+comment5.params=ingrediente
+comment5.target=int\ getCantidadDeIngredienteRequerida(Ingrediente)
+comment5.text=\r\n\ Retorna\ la\ cantidad\ del\ ingrediente\ solicitado\ para\ esta\r\n\ receta.\ Si\ la\ receta\ no\ requiere\ este\ ingrediente,\ retorna\ 0\r\n\r\n\ @param\ ingrediente\ el\ ingrediente\ solicitado\r\n\ @return\ la\ cantidad\ de\ ingrediente\ requerida\ por\ la\ receta.\r\n
+comment6.params=
+comment6.target=int\ volumenTotalReceta()
+comment6.text=\r\n\ Retorna\ el\ peso\ total\ de\ la\ receta\ (sumatoria\ de\ las\r\n\ cantidades\ de\ todos\ los\ ingredientes\ de\ la\ receta)\r\n\r\n\ @return\ el\ peso\ total\ de\ la\ receta\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ Retorna\ un\ String\ con\ el\ siguiente\ formato\:\r\n\ \r\n\ \ "Receta\:\ <Ingrediente1>[<Cantidad1>];<Ingrediente2>[<Cantidad2>];...;<<IngredienteN>[<CantidadN>];"\r\n\ \ \r\n\ \ Ej.\:\ "Receta\:\ AZUCAR[5];CAFE[15];AGUA[150];"\r\n\ \ \ \ \r\n
+numComments=8

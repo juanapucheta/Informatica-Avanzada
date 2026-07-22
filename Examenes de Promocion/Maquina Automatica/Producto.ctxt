@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Producto
+comment0.text=\r\n\ Recetas\ de\ la\ maquina\r\n
+comment1.params=
+comment1.target=Producto()
+comment2.params=precio
+comment2.target=void\ setPrecio(int)
+comment3.params=
+comment3.target=int\ getPrecio()
+comment4.params=r
+comment4.target=void\ setReceta(Receta)
+comment5.params=
+comment5.target=Receta\ getReceta()
+numComments=6
