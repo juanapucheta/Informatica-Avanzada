@@ -54,21 +54,21 @@ public class Evaluacion {
 // Se tiene la siguiente clase
 // 10 / 10
 public class A {
-private static int k = 0;
-private int i;
-public A(int j){
-i = j;
-}
-public void m1(int i) {
-A aux = new A(0);
-aux.m2(i);
-k = k+i+1;
-}
+  private static int k = 0;
+  private int i;
+  public A(int j){
+    i = j;
+  }
+  public void m1(int i) {
+    A aux = new A(0);
+    aux.m2(i);
+    k = k+i+1;
+  }
 public void m2(int i) {
-this.i += i;
-i = i*2;
-k = k+i;
-}
+    this.i += i;
+    i = i*2;
+    k = k+i;
+  }
 }
 
 // Se ejecutan las siguientes instrucciones
