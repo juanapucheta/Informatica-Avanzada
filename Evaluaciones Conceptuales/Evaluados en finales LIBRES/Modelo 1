@@ -136,4 +136,25 @@ public class ClientePremium extends Cliente {
   }
 }
 
+// Dado el siguiente diagrama UML implemente los métodos indicados y reemplace "???" por lo que corresponda.
+public class Transportes {
+  ArrayList<Vehiculo> moviles;
 
+  public Transportes () {
+    moviles = new ArrayList<Vehiculo>();
+  }
+
+  public void addMovil (Vehiculo v) {
+    moviles.add(v);
+  }
+
+  public ArrayList<Acuatico> getAcuaticos () {
+    ArrayList<Acuatico> acuaticos = new ArrayList<Acuatico>();
+    for(Vehiculo v: moviles){
+      if(v.getMedio().equals(Tipo.ACUATICO)){
+        acuaticos.add((Acuatico)v);
+      }
+    }
+    return acuaticos;
+  }
+}
