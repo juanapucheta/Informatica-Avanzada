@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Villano
+comment1.params=nombre
+comment1.target=Villano(java.lang.String)
+comment1.text=\r\n\ Crea\ un\ villano\ con\ el\ nombre\ pasado\ como\ argumento\ y\ los\ niveles\r\n\ de\ energia\ y\ ataque\ por\ defecto\ \r\n\ @param\ nombre\ Nombre\ del\ villano\r\n\ en\ algunn\ otro\ personaje\r\n
+comment2.params=
+comment2.target=void\ subirNivel()
+comment2.text=\r\n\ Aumenta\ tanto\ la\ vida\ como\ el\ ataque\ del\ villano\r\n\ en\ el\ factor\ especificado\ por\ la\ clase\ (INCREMENTO_VIDA,\ INCREMENTO_ATAQUE)\r\n
+comment3.params=
+comment3.target=void\ mover()
+comment3.text=\r\n\ El\ villano\ no\ se\ mueve\ en\ el\ tablero,\ su\ posicion\ es\ fija\r\n
+comment4.params=
+comment4.target=void\ atacar()
+comment4.text=\r\n\ El\ villano\ ataca\ a\ todos\ los\ objetos\ que\ atacables\ que\ estan\ a\ su\ vista\ con\ su\ valor\ de\ ataque.\r\n\ \r\n\ AYUDA\:\ \ \ Vea\ el\ m\u00E9todo\ obtenerPersonajesCercanos()\ de\ la\ clase\ mapa.\r\n\ \ \ \ \ \ \ \ \ \ Tener\ en\ cuenta\ que\ ese\ Personaje\ tiene\ que\ ser\ del\ tipo\ Atacable.\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (^)\ ->\ No\ existe\ tal\ tipo...\r\n
+comment5.params=danio
+comment5.target=void\ recibirGolpe(int)
+comment5.text=\r\n\ Decrementa\ la\ vida\ del\ villano\ por\ la\ mitad\ del\ valor\ recibido.\r\n
+numComments=6

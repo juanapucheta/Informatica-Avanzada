@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Luchador
+comment0.text=\r\n\ Interfaz\ Luchador\ \r\n\r\n
+comment1.params=
+comment1.target=void\ atacar()
+comment2.params=danio
+comment2.target=void\ recibirGolpe(int)
+numComments=3

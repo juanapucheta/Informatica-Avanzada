@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Heroe
+comment1.params=nombre\ faccion
+comment1.target=Heroe(java.lang.String,\ Faccion)
+comment1.text=\r\n\ Crea\ una\ nueva\ instancia\ de\ Heroe,\ con\ el\ nivel\ de\ ataque\ y\ energia\r\n\ por\ defecto\ (para\ Heroe)\r\n\ @param\ nombre\ Nombre\ del\ Heroe\r\n\ @param\ faccion\ Faccion\ a\ la\ cual\ pertenece\r\n\ \r\n
+comment2.params=
+comment2.target=void\ atacar()
+comment2.text=\r\n\ El\ heroe\ solo\ puede\ atacar\ a\ objetivos\ cercanos\ (ver\ m\u00E9todo\ obtenerPersonajesCercanos\ clase\ Mapa).\r\n\ Debe\ ser\ un\ villano\ o\ bien\ un\ Heroe\ de\ una\ faccion\ diferente\ a\ la\ del\ heroe.\r\n\ Los\ danios\ se\ hacen\ mediante\ el\ metodo\ RecibirGolpe\ con\ el\ nivel\ de\ ataque\ propio.\r\n
+comment3.params=danio
+comment3.target=void\ recibirGolpe(int)
+comment3.text=\r\n\ Disminuye\ la\ vida\ del\ Heroe\ por\ el\ valor\ del\ danio\r\n
+comment4.params=
+comment4.target=void\ subirNivel()
+comment4.text=\r\n\ Aumenta\ su\ vida\ de\ acuerdo\ a\ la\ variable\ INCREMENTO_VIDA\r\n\ y\ su\ ataque\ de\ acuerdo\ a\ la\ variable\ INCREMENTO_ATAQUE\r\n
+comment5.params=
+comment5.target=void\ mover()
+comment5.text=\r\n\ Mueve\ UNA\ VEZ\ a\ la\ primera\ posicion\ disponible\ en\ el\ siguiente\ orden\r\n\ 1.\ ARRIBA\r\n\ 2.\ ABAJO\r\n\ 3.\ DERECHA\r\n\ 4.\ IZQUIERDA\r\n\ Si\ ningun\ movimiento\ esta\ disponible\ el\ heroe\ se\ queda\ quieto\r\n\ AYUDAS\:\r\n\ -\ Las\ direcciones\ se\ pueden\ recorrer\ como\ una\ lista\ en\ ese\ \r\n\ oreden\ utilizando\ Direccion.values()\r\n\ -\ Metodo\ realizarMovimiento\ de\ Mapa\ para\ comprobar\ que\ el\r\n\ movimiento\ sea\ legal\r\n
+comment6.params=
+comment6.target=Faccion\ getFaccion()
+comment6.text=\r\n\ Devuelve\ la\ faccion\ del\ Heroe\r\n\ @return\r\n
+numComments=7

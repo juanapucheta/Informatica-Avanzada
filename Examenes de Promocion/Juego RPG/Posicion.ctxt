@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Posicion
+comment0.text=\r\n\ Representa\ una\ posicion\ determinada\ por\ \r\n\ el\ eje\ x\ (Horizontal)\ y\ el\ eje\ y\ (Vertical)\r\n
+comment1.params=initPosx\ initPosy
+comment1.target=Posicion(java.lang.Integer,\ java.lang.Integer)
+comment2.params=
+comment2.target=Posicion()
+comment3.params=posx\ posy
+comment3.target=void\ setPosicion(java.lang.Integer,\ java.lang.Integer)
+comment4.params=d
+comment4.target=Posicion\ nuevaPosicion(Direccion)
+comment4.text=\r\n\ Calcula\ la\ nueva\ posicion\ en\ base\ a\ la\ posicion\ actual\r\n\ y\ la\ direccion\ de\ entrada\r\n\ Tener\ en\ cuenta\ que\ la\ direccion\ va\ a\ afectar\ la\ posicion\r\n\ en\ X\ o\ en\ Y\ de\ la\ siguiente\ forma\:\r\n\ Arriba\:\ y+1\r\n\ Abajo\:\ y-1\r\n\ Derecha\:\ x+1\r\n\ Izquierda\:\ x-1\r\n\ @param\ d\ Direccion\ a\ ser\ evaluada\r\n\ @return\ la\ nueva\ posicion\ tentativa\ (sin\ moficiar\ al\ objeto)\r\n
+comment5.params=
+comment5.target=java.lang.Integer\ getX()
+comment6.params=
+comment6.target=java.lang.Integer\ getY()
+numComments=7
