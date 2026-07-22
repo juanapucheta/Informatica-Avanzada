@@ -1,0 +1,145 @@
+// Implemente el setter de acuerdo a la documentacion 
+// 15 / 15
+
+public class Circulo {
+  public String identificador;
+/**
+* Si el argumento es distinto de null, setea el identificador,
+* removiendo antes cualquier espacio inicial y conviertiendo a mayusculas.
+* Si el argumento es null, ignora el valor sin setear el identificador
+* @param el nuevo identificador
+*/
+  public void setIdentificador (String id){
+    if(id!=null){
+      identificador=id.toUpperCase().trim();
+    }
+  }
+/**
+* retorna el valor del identificador de este Circulo
+*/
+  public String getIdentificador () {
+    return identificador;
+  }
+}
+
+// Para la clase especificada, implementar public HashSet<Persona> listaVotantes ()
+//  Asuma que la clase Persona implementa los métodos: public int getEdad (), public int getDni ()
+// 15 / 15
+
+import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Iterator;
+public class Evaluacion {
+  public ArrayList<Persona> personas;
+  //Constructor
+  public Evaluacion () {
+    personas = new ArrayList<Persona>();
+  }
+/**
+* Devuelve un HashSet con todas las personas mayores o iguales a 18 anios.
+*/
+  public HashSet<Persona> listaVotantes ( ){
+  HashSet<Persona> mayores= new HashSet<Persona>();
+  for(Persona p : personas){
+    if(p.getEdad()>=18){
+      mayores.add(p);
+    }
+  }
+  return mayores;
+  }
+}
+
+// Se tiene la siguiente clase
+// 10 / 10
+public class A {
+  private static int k = 0;
+  private int i;
+  public A(int j){
+    i = j;
+  }
+  public void m1(int i) {
+    A aux = new A(0);
+    aux.m2(i);
+    k = k+i+1;
+  }
+  public void m2(int i) {
+    this.i += i;
+    i = i*2;
+    k = k+i;
+  }
+}
+
+// Se ejecutan las siguientes instrucciones:
+A a = new A(5);
+a.m1(5);
+a.m1(5);
+a.m2(2);
+
+// Indique el valor que de la variable de clase "k". K = 36 
+
+// Los tipos de libro de una biblioteca están representados en el tipo enumerado Libro:
+// public enum Libro { NOVELA, POESIA, AUTOAYUDA, HISTORIA, BIOGRAFIA, CIENCIA; }
+// Implemente la clase Biblioteca y los métodos definidos. 
+// Debe contener una colección del tipo HashMap que contenga tipo de libro y los días máximos de préstamo permitidos.
+// 15 / 15 
+import java.util.HashMap;
+public class Biblioteca {
+  HashMap <Libro,Integer> mapaDeTiempoRetorno;
+/**
+* Inicializa un HashMap para almacenar todos
+* los libros del enumerado y la cantidad de dias
+* que pueden prestarse.
+* Debe asignar dias por defecto 3
+**/
+  public Biblioteca(){
+    mapaDeTiempoRetorno= new HashMap<Libro, Integer>();
+    for(Libro l:Libro.values()){
+      mapaDeTiempoRetorno.put(l,3);
+    }
+  }
+/**
+* Ajusta los dias de prestamo de un libro en particular
+**/
+  public void setDias (Libro b, int dias){
+    mapaDeTiempoRetorno.put(b,dias);
+  }
+/**
+* Retorna los dias de prestamo de un libro en particular
+**/
+  public int getDias(Libro b){
+    return mapaDeTiempoRetorno.get(b);
+  }
+/**
+* Retorna el HashMap biblioteca
+**/
+  public HashMap<Libro,Integer> getBiblioteca(){
+    return mapaDeTiempoRetorno;
+  }
+}
+
+// Considere el siguiente diagrama de clases, en donde una Mortero es un tipo 
+// especial de Armamento que se distingue del resto por su nombre. 
+// Codifique la clase tal que extienda de la clase Armamento, e implemente el constructor y el getter del campo nombre. 
+// 15 / 15
+
+public class Mortero extends Armamento{
+  String nombre;
+/**
+* Constructor de la clase Mortero.
+* El nombre es el nombre de la clase.
+*/
+  public Mortero (Integer ataque) {
+    super(ataque);
+    nombre="Mortero";
+  }
+  public String getNombre() {
+    return nombre;
+  }
+}
+
+// Dado el siguiente diagrama UML implemente los métodos indicados y reemplace "???" por lo que corresponda. 
+// System.out.println(moviles.getTerrestres().size());
+
+
