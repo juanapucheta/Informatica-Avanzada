@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=GestorReservas
+comment1.params=gestorSalas
+comment1.target=GestorReservas(GestorSalas)
+comment2.params=nombreSala
+comment2.target=java.util.List\ getReservasPorSala(java.lang.String)
+comment3.params=nombreSala\ usuario\ inicio\ duracion
+comment3.target=boolean\ reservar(java.lang.String,\ Usuario,\ java.time.LocalDateTime,\ int)
+comment3.text=\r\n\ Reserva\ una\ sala\ para\ un\ usuario,\ a\ la\ hora\ y\ con\ la\ duraci\u00F3n\ indicada\r\n\ \ \r\n\ Si\ la\ sala\ no\ existe\ en\ el\ gestor\ de\ Salas\ ->\ Lanza\ Exception\ ().\r\n\ \r\n\ Revisa\ todas\ las\ reservas\ asociadas\ a\ la\ sala,\ y\ si\ existe\ alguna\r\n\ que\ se\ superpone\ ->\ Lanza\ Exception\ ().\r\n\ \r\n\ Si\ la\ sala\ existe,\ y\ no\ tienen\ ninguna\ reserva\ superpuesta\r\n\ se\ genera\ una\ nueva\ Reserva\ y\ se\ agrega\ al\ mapa\ de\ reservas\r\n\ y\ retorna\ true.\r\n\ \r\n\ @throw\ Exception\ si\ la\ sala\ no\ existe,\ o\ si\ tiene\ una\ reserva\ en\ el\ \r\n\ horario\ requerido\r\n\ @return\ true\ si\ se\ pudo\ generar\ la\ reserva.\r\n\ \r\n
+comment4.params=nombreSala\ inicio
+comment4.target=void\ liberar(java.lang.String,\ java.time.LocalDateTime)
+comment4.text=\r\n\ Libera\ la\ sala\ de\ la\ reserva\ agendada\ a\ la\ hora\ epecificada.\r\n\ \r\n\ Obitene\ la\ Sala\ por\ su\ nombre\ del\ gestor\ de\ Salas,\ si\ no\ existe\ o\ no\ tiene\r\n\ reservas\ asociadas,\ no\ hace\ nada.\r\n\ \r\n\ Recorre\ la\ lista\ de\ reservas\ de\ la\ sala,\ busca\ si\ hay\ alguna\ que\ inicie\r\n\ a\ la\ hora\ especificada\ y\ la\ remueve.\r\n\ \r\n
+comment5.params=inicio\ duracion
+comment5.target=java.util.List\ disponibles(java.time.LocalDateTime,\ int)
+comment5.text=\r\n\ Devuevle\ una\ lista\ de\ todas\ las\ salas\ DISPONIBLES\ con\ una\ capacidad\r\n\ m\u00EDnima\ y\ en\ una\ ubicaci\u00F3n.\r\n\ \r\n\ Recorre\ todas\ las\ salas\ existentes,\ y\ de\ cada\ sala\ recorre\ la\ lista\ de\ \r\n\ reservas\ y\ determina\ si\ est\u00E1n\ o\ no\ disponibles\ a\ la\ hora\ indicada\ \r\n\ por\ el\ tiempo\ indicado.\ Si\ est\u00E1\ disponible,\ agrega\ la\ Sala\ a\ la\ lista.\r\n\ \r\n\ @return\ la\ lista\ con\ todas\ las\ salas\ disponbiles.\r\n
+numComments=6

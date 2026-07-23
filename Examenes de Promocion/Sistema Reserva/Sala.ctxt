@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Sala
+comment1.params=nombre\ capacidad\ ubicacion
+comment1.target=Sala(java.lang.String,\ int,\ Ubicacion)
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+comment3.params=
+comment3.target=int\ getCapacidad()
+comment4.params=
+comment4.target=Ubicacion\ getUbicacion()
+comment5.params=capacidad
+comment5.target=void\ setCapacidad(int)
+comment5.text=\r\n\ Setea\ la\ capacidad\ de\ la\ sala\r\n\ solo\ si\ la\ capacidad\ es\ mayor\ a\ 0\r\n
+comment6.params=ubicacion
+comment6.target=void\ setUbicacion(Ubicacion)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

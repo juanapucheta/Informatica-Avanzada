@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Reserva
+comment0.text=\r\n\ Completa\ los\ m\u00E9todos\ indicados\ de\ la\ clase\ Reserva\ seg\u00FAn\ la\ documentaci\u00F3n\r\n\ \r\n\ -\ Implementar\ el\ m\u00E9todo\ toString\ con\ formato\:\ "Reserva\ de\ <nombre_sala>\ por\ <usuario>\ desde\ <fecha_hora_inicio>\ por\ <duracion>h".\r\n\ -\ Implementar\ el\ m\u00E9todo\ seSuperpone(...)\ para\ verificar\ si\ una\ reserva\ se\ superpone\ con\ otra\ en\ funci\u00F3n\ del\ horario.\r\n\ \r\n\ El\ sistema\ utiliza\ la\ clase\ LocalDateTime\ de\ la\ biblioteca\ java.time\ para\ representar\ fechas\ y\ horas.\ \r\n\ Esta\ clase\ permite\ expresar\ momentos\ como\ \u201C2025-06-15T10\:00\u201D\ y\ sumar\ horas\ usando\ el\ m\u00E9todo\ plusHours(int).\ \r\n\ Tambi\u00E9n\ pueden\ compararse\ con\ operadores\ >,\ <,\ o\ utlizando\ el\ m\u00E9todo\ isBefore(LocalDateTime).\r\n\ \r\n\ No\ es\ necesario\ considerar\ zonas\ horarias\ ni\ diferencias\ geogr\u00E1ficas.\ Todos\ los\ horarios\ se\ interpretan\ como\ locales.\r\n
+comment1.params=sala\ usuario\ inicio\ duracionHoras
+comment1.target=Reserva(Sala,\ Usuario,\ java.time.LocalDateTime,\ int)
+comment2.params=
+comment2.target=Sala\ getSala()
+comment3.params=
+comment3.target=Usuario\ getUsuario()
+comment4.params=
+comment4.target=java.time.LocalDateTime\ getInicio()
+comment5.params=
+comment5.target=int\ getDuracionHoras()
+comment6.params=otroInicio\ otrasHoras
+comment6.target=boolean\ seSuperpone(java.time.LocalDateTime,\ int)
+comment6.text=\r\n\ indica\ si\ el\ horario\ de\ esta\ Reserva\ se\ superpone\ con\ otro\ horario\ y\ duraci\u00F3n\r\n\ pasada\ como\ par\u00E1metro\r\n\ \r\n\ Por\ ejemplo,\ si\ esta\ reserva\ es\ de\ 9\ a\ 11,\r\n\ \ otroInicio\ 10,\ otrasHoras\ 1\ ->\ true\r\n\ \ otroInicio\ 8,\ otrasHoras\ 2\ ->\ True\r\n\ \ otroInicio\ 8,\ otrasHoras\ 1\ ->\ false\r\n\ \r\n\ horario\:\ otroInicio\r\n\ duracion\:\ otrasHoras\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

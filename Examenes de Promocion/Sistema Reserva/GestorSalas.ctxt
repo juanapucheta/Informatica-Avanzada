@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=GestorSalas
+comment1.params=sala
+comment1.target=void\ agregarSala(Sala)
+comment1.text=\r\n\ Agrega\ una\ Sala\ a\ la\ lista\ de\ salas\ del\ gestor\r\n
+comment2.params=nombre
+comment2.target=void\ eliminarSala(java.lang.String)
+comment2.text=\r\n\ Elimina\ de\ la\ lista\ la\ Sala\ cuyo\ nombre\ coincide\r\n\ con\ el\ nombre\ pasado\ como\ argumento.\r\n
+comment3.params=nombre\ nuevaCapacidad\ nuevaUbicacion
+comment3.target=void\ modificarSala(java.lang.String,\ int,\ Ubicacion)
+comment3.text=\r\n\ Actualiza\ la\ capacidad\ y\ ubicaci\u00F3n\ de\ la\ Sala\ cuyo\r\n\ nombre\ coincide\ con\ el\ nombre\ pasado\ como\ argumento.\r\n
+comment4.params=nombre
+comment4.target=Sala\ buscarSala(java.lang.String)
+comment4.text=\r\n\ Devuelve\ la\ Sala\ cuyo\ nombre\ coincide\ con\ el\ nombre\r\n\ pasado\ como\ argumento\r\n
+comment5.params=
+comment5.target=java.util.List\ getTodas()
+comment5.text=\r\n\ Devuelve\ una\ lista\ con\ todas\ las\ Salas\ del\r\n\ gestor\ de\ Salas\r\n
+numComments=6
