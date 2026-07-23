@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Cafe
+comment0.text=\r\n\ Producto\ generado\ por\ la\ maquina\ de\ cafe\r\n
+comment1.params=tipo
+comment1.target=Cafe(TipoProducto)
+comment1.text=\r\n\ Constructor\ se\ inicializa\ a\ partir\ de\ un\ tipo\ de\ producto\r\n
+comment2.params=extra
+comment2.target=void\ agregarExtra(Extra)
+comment2.text=\r\n\ Agrega\ extras\ a\ un\ cafe\ pedido\r\n\ @param\ extra\:\ El\ elemento\ que\ se\ desea\ agregar\ al\ cafe\r\n
+comment3.params=
+comment3.target=java.util.List\ obtenerExtras()
+comment3.text=\r\n\ Obtiene\ todos\ los\ extras\ contenido\ en\ el\ cafe\r\n\ @return\:\ lista\ de\ extras\r\n
+comment4.params=recetas
+comment4.target=java.util.List\ obtenerIngredientes(java.util.Map)
+comment4.text=\r\n\ Obtiene\ la\ lista\ de\ los\ ingredientes\ del\ producto\ a\ partir\ de\ las\ recetas\ disponibles\ \r\n\ @param\ recetas\:\ Estructura\ que\ contiene\ las\ recetas\ para\ cada\ tipo\ de\ producto\r\n\ @throws\ ProductoException\ si\ el\ tipo\ de\ producto\ no\ se\ encuentra\ en\ las\ recetas\r\n
+numComments=5

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Receta
+comment1.params=
+comment1.target=Receta()
+comment2.params=ing\ cantidad
+comment2.target=void\ agregarIngrediente(Ingrediente,\ java.lang.Integer)
+comment2.text=\r\n\ Agrega\ un\ ingrediente\ a\ la\ receta\r\n\ @param\ ing\ el\ Ingredienta\ a\ agregar\ a\ la\ receta\r\n\ @param\ cantidad\ la\ cantidad\ de\ ingrediente\ a\ agregar\ a\ la\ receta\r\n\ \r\n\ @throws\ IllegalArgumentException\ cuando\ el\ ingrediente\ o\ la\ cantidad\ de\ ingredinte\ a\ agregar\ es\ invalida\ (ej.\ negativa)\r\n\ \r\n
+comment3.params=
+comment3.target=int\ volumenTotalReceta()
+comment3.text=\r\n\ Retorna\ el\ peso\ total\ de\ la\ receta\ (sumatoria\ de\ todos\ los\ ingredientes\ de\ la\ receta)\r\n\ @return\ el\ peso\ total\ de\ la\ receta\r\n
+comment4.params=
+comment4.target=java.util.Map\ getMapaDeIngredientes()
+comment4.text=\r\n\ Getter\r\n\ @return\r\n
+comment5.params=
+comment5.target=java.util.List\ getIngredientes()
+comment5.text=\r\n\ Obtiene\ la\ lista\ de\ ingredientes\ de\ esta\ receta\r\n\ @return\ la\ lista\ de\ ingredientes\ de\ la\ receta\r\n
+comment6.params=ingrediente
+comment6.target=int\ getCantidadDeIngrediente(Ingrediente)
+comment6.text=\r\n\ Retorna\ la\ cantidad\ del\ ingrediente\ solicitado\ para\ esta\ receta.\ Si\ la\ receta\r\n\ no\ requiere\ este\ ingrediente,\ retorna\ 0\r\n\ @param\ ingrediente\ el\ ingrediente\ solicitado\r\n\ @return\ la\ cantidad\ de\ ingrediente\ requerida\ por\ la\ receta.\r\n
+numComments=7
