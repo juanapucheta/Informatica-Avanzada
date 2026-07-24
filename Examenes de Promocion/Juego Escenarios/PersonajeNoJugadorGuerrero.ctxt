@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=PersonajeNoJugadorGuerrero
+comment1.params=nombre\ vida\ arma
+comment1.target=PersonajeNoJugadorGuerrero(java.lang.String,\ java.lang.Integer,\ Arma)
+comment1.text=\r\n\ Crea\ una\ nueva\ instancia\ de\ un\ personaje\ no\ jugador\ guerrero\r\n\r\n\ @param\ nombre\ El\ nombre\ del\ personaje\r\n\ @param\ vida\ La\ vida\ del\ personaje\r\n\ @param\ arma\ El\ arma\ que\ utilizara\ el\ personaje\r\n
+comment2.params=p
+comment2.target=void\ atacar(Personaje)
+comment2.text=\r\n\ Ataca\ a\ un\ personaje\ especifico\ utilizando\ el\ arma\ del\ personaje\ no\ jugador\ guerrero.\r\n\r\n\ @param\ p\ El\ personaje\ al\ que\ se\ va\ a\ atacar\r\n\ @throws\ ArmaDescargadaException\ Si\ el\ arma\ del\ personaje\ no\ jugador\ guerrero\ esta\ descargada\r\n
+numComments=3

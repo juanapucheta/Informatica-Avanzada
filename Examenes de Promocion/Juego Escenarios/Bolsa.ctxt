@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Bolsa
+comment1.params=capacidad
+comment1.target=Bolsa(java.lang.Integer)
+comment1.text=\r\n\ Constructor\ de\ Bolsa\r\n\r\n\ @param\ capacidad\ La\ capacidad\ de\ la\ bolsa\r\n
+comment2.params=e
+comment2.target=void\ addElemento(Elemento)
+comment2.text=\r\n\ Anade\ un\ elemento\ a\ la\ bolsa.\r\n\r\n\ @param\ e\ El\ elemento\ a\ anadir.\r\n\ @throws\ BolsaLlenaException\ Si\ la\ bolsa\ esta\ llena\ y\ no\ se\ puede\ anadir\ el\ elemento.\r\n
+comment3.params=nombre
+comment3.target=Elemento\ getElemento(java.lang.String)
+comment3.text=\r\n\ Devuelve\ el\ elemento\ con\ el\ nombre\ suministrado.\r\n\r\n\ @param\ nombre\ El\ nombre\ del\ elemento\ a\ buscar.\r\n\ @return\ El\ elemento\ con\ el\ nombre\ suministrado.\r\n\ @throws\ IllegalArgumentException\ Si\ no\ existe\ elemento\ con\ el\ nombre\ suministrado.\r\n
+numComments=4

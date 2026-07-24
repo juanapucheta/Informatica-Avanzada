@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MisionDeCombate
+comment1.params=nombre\ nivelRequerido\ escenario
+comment1.target=MisionDeCombate(java.lang.String,\ java.lang.Integer,\ Escenario)
+comment1.text=\r\n\ Crea\ una\ nueva\ mision\ de\ combate\r\n\r\n\ @param\ nombre\ El\ nombre\ de\ la\ mision\r\n\ @param\ nivelRequerido\ El\ nivel\ requerido\ para\ participar\ de\ la\ mision\r\n\ @param\ escenario\ El\ escenario\ de\ combate\ donde\ se\ realizara\ la\ mision\r\n\ @throws\ java.lang.IllegalArgumentException\ cuando\ el\ escenario\ no\ es\ de\r\n\ combate\r\n
+comment2.params=p
+comment2.target=java.lang.Boolean\ validarCumplimiento(Personaje)
+comment2.text=\r\n\ Valida\ si\ el\ personaje\ cumplio\ la\ mision\ o\ no\r\n\r\n\ @param\ p\ El\ personaje\ a\ validar\r\n\ @return\ true\ si\ no\ quedan\ enemigos\ en\ el\ escenario\ false\ en\ caso\ contrario\r\n\ @throws\ java.lang.IllegalArgumentException\ cuando\ el\ personaje\ no\ es\ un\ personaje\ jugador\r\n
+numComments=3

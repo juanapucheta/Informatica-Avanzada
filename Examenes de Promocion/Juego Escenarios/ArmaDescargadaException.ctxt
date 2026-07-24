@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=ArmaDescargadaException
+comment1.params=message
+comment1.target=ArmaDescargadaException(java.lang.String)
+numComments=2

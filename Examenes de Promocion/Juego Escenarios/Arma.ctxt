@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Arma
+comment1.params=nombre\ tipoMunicion
+comment1.target=Arma(java.lang.String,\ TipoMunicion)
+comment1.text=\r\n\ Constructor\ de\ Arma\r\n\ @param\ nombre\r\n\ @param\ tipoMunicion\r\n
+comment2.params=m
+comment2.target=void\ cargar(Municion)
+comment2.text=\r\n\ Agrega\ la\ municion\ a\ la\ lista\ de\ municiones.\r\n\ Lanza\ MunicionNoValidaException\ si\ la\ municion\ no\ coincide\ con\ el\ tipo\r\n\ de\ municion\ del\ arma.\r\n\ @param\ m\ la\ municion\ a\ cargar\r\n\ @throws\ MunicionNoValidaException\ si\ la\ municion\ no\ coincide\ con\ el\r\n\ \ \ \ \ \ \ \ \ \ \ tipo\ de\ municion\ del\ arma.\r\n
+comment3.params=
+comment3.target=java.lang.Integer\ disparar()
+comment3.text=\r\n\ Remueve\ la\ primera\ municion\ de\ la\ lista\ y\ retorna\ el\ danio\r\n\ de\ la\ misma.\r\n\ Arroja\ ArmaDescargadaException\ si\ no\ hay\ municiones\r\n\ @return\ el\ valor\ de\ danio\ de\ la\ municion\ removida\r\n\ @throws\ ArmaDescargadaException\ si\ no\ hay\ municiones\ disponibles\r\n
+comment4.params=
+comment4.target=java.lang.Boolean\ isCargada()
+comment4.text=\r\n\ Verifica\ si\ existen\ municiones\ cargadas\ en\ la\ lista.\r\n\ @return\ true\ si\ hay\ municiones\ cargadas,\ false\ de\ lo\ contrario\r\n
+numComments=5

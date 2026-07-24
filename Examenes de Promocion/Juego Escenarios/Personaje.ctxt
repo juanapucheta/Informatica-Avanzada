@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Personaje
+comment1.params=nombre\ vida
+comment1.target=Personaje(java.lang.String,\ java.lang.Integer)
+comment2.params=danio
+comment2.target=void\ recibirDanio(java.lang.Integer)
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment4.params=nombre
+comment4.target=void\ setNombre(java.lang.String)
+comment5.params=
+comment5.target=Bolsa\ getBolsa()
+comment6.params=
+comment6.target=java.lang.Integer\ getVida()
+comment7.params=vida
+comment7.target=void\ setVida(java.lang.Integer)
+numComments=8

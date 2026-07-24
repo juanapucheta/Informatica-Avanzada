@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=PersonajeNoJugador
+comment1.params=nombre\ vida\ mision\ recompensa
+comment1.target=PersonajeNoJugador(java.lang.String,\ java.lang.Integer,\ Mision,\ Elemento)
+comment1.text=\r\n\ Crea\ un\ nuevo\ personaje\ no\ jugador\ con\ nombre,\ vida\r\n\ una\ mision\ y\ su\ recompensa\ por\ cumplirla.\r\n\r\n\ @param\ nombre\ El\ nombre\ del\ personaje\r\n\ @param\ vida\ La\ cantidad\ de\ vida\ del\ personaje\r\n\ @param\ mision\ La\ mision\ que\ asignara\ a\ un\ personaje\ jugador\ que\ la\ solicite\r\n\ @param\ recompensa\ La\ recompensa\ por\ cumplir\ la\ mision\r\n
+comment2.params=personajeJugador
+comment2.target=void\ asignarMision(PersonajeJugador)
+comment2.text=\r\n\ Asigna\ una\ mision\ a\ un\ personaje\ jugador.\r\n\r\n\ @param\ personajeJugador\ El\ personaje\ jugador\ al\ cual\ se\ le\ asignara\ la\ mision\r\n
+comment3.params=personajeJugador
+comment3.target=void\ asignarRecompensa(PersonajeJugador)
+comment3.text=\r\n\ Asigna\ la\ recompensa\ de\ una\ mision\ completada\ a\ un\ personaje\ jugador.\r\n\ Debe\ agrega\ el\ item\ a\ la\ bolsa,\ limpiar\ la\ mision\ actual\ y\ subir\ de\ nivel\r\n\ del\ personaje.\r\n\r\n\ @param\ personajeJugador\ El\ personaje\ jugador\ al\ cual\ se\ le\ asignara\ la\ recompensa\r\n\ @throws\ IllegalStateException\ si\ la\ mision\ no\ ha\ sido\ finalizada,\ si\ la\ bolsa\ del\ personaje\ esta\ llena\r\n
+numComments=4

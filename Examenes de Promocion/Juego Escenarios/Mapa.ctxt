@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Mapa
+comment1.params=
+comment1.target=Mapa()
+comment2.params=escenario\ conexiones
+comment2.target=void\ addConexiones(Escenario,\ java.util.ArrayList)
+comment2.text=\r\n\ Agrega\ un\ escenario\ y\ su\ lista\ de\ conexiones.\r\n\r\n\ @param\ escenario\ El\ escenario\ a\ agregar\ al\ mapa\r\n\ @param\ conexiones\ La\ lista\ de\ conexiones\r\n
+comment3.params=
+comment3.target=Escenario\ getEscenarioInicial()
+comment3.text=\r\n\ Obtiene\ el\ escenario\ inicial.\r\n\r\n\ @return\ El\ escenario\ inicial\r\n
+comment4.params=escenarioInicial
+comment4.target=void\ setEscenarioInicial(Escenario)
+comment4.text=\r\n\ Establece\ el\ escenario\ inicial.\r\n\r\n\ @param\ escenarioInicial\ el\ escenario\ inicial\ que\ se\ va\ a\ establecer\r\n
+comment5.params=escenarioActual
+comment5.target=java.util.ArrayList\ getEscenariosContiguos(Escenario)
+comment5.text=\r\n\ Obtiene\ los\ escenarios\ contiguos\ al\ escenario\ actual.\r\n\r\n\ @param\ escenarioActual\ el\ escenario\ actual\ del\ cual\ se\ desean\ obtener\ los\ escenarios\ contiguos\r\n\ @return\ una\ lista\ de\ los\ escenarios\ contiguos\ al\ escenario\ actual\r\n
+numComments=6

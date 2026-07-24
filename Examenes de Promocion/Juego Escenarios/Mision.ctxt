@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Mision
+comment1.params=nombre\ nivelRequerido
+comment1.target=Mision(java.lang.String,\ java.lang.Integer)
+comment1.text=\r\n\ Crea\ una\ nueva\ mision\ con\ su\ nombre\ y\ el\ requerimiento\ de\ nivel\r\n\ necesario\ para\ realizarla\r\n\r\n\ @param\ nombre\ El\ nombre\ de\ la\ mision\r\n\ @param\ nivelRequerido\ El\ nivel\ requerido\ para\ participar\ de\ la\ mision\r\n
+comment2.params=p
+comment2.target=java.lang.Boolean\ validarCumplimiento(Personaje)
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment4.params=
+comment4.target=java.lang.Integer\ getNivelRequerido()
+numComments=5

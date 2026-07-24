@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MisionDeExploracion
+comment1.params=nombre\ nivelRequerido\ escenarioAExplorar
+comment1.target=MisionDeExploracion(java.lang.String,\ java.lang.Integer,\ Escenario)
+comment1.text=\r\n\ Crea\ una\ nueva\ mision\ de\ exploracion\r\n\r\n\ @param\ nombre\ El\ nombre\ de\ la\ mision.\r\n\ @param\ nivelRequerido\ El\ nivel\ requerido\ para\ realizar\ la\ mision.\r\n\ @param\ escenarioAExplorar\ El\ escenario\ basico\ a\ explorar.\r\n\ @throws\ java.lang.IllegalArgumentException\ cuando\ el\ escenario\ no\ es\r\n\ un\ escenario\ basico\r\n
+comment2.params=p
+comment2.target=java.lang.Boolean\ validarCumplimiento(Personaje)
+comment2.text=\r\n\ Valida\ el\ cumplimiento\ de\ la\ misi\u00F3n\ por\ parte\ de\ un\ personaje\ jugador.\r\n\r\n\ @param\ p\ El\ personaje\ jugador\ para\ validar\ el\ cumplimiento\ de\ la\ misi\u00F3n.\r\n\ @return\ true\ si\ el\ personaje\ jugador\ ya\ visito\ el\ escenario\ false\ de\ lo\ contrario.\r\n
+numComments=3
