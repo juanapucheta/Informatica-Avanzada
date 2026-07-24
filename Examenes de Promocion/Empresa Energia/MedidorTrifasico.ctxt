@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=MedidorTrifasico
+comment1.params=posicion
+comment1.target=MedidorTrifasico(CoordenadaGPS)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MedidorTrifasico\r\n
+comment2.params=
+comment2.target=TipoMedidor\ getTipoMedidor()
+comment2.text=\r\n\ \r\n\ @return\ El\ Tipo\ de\ Medidor\r\n
+comment3.params=
+comment3.target=int\ getSerialNumber()
+comment3.text=\r\n\ \r\n\ @return\ El\ serialNumber\ del\ medidor\r\n
+comment4.params=
+comment4.target=void\ reset()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

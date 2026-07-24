@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Medidor
+comment1.params=coordenadas
+comment1.target=Medidor(CoordenadaGPS)
+comment1.text=\r\n\ Constructor\r\n\r\n\ @param\ coordenadas\ La\ ubicacion\ fisica\ del\ medidor\r\n
+comment2.params=
+comment2.target=CoordenadaGPS\ getCoordenadas()
+comment2.text=\r\n\ \r\n\ @return\ Las\ coordenadasGPS\ con\ la\ ubicacion\ del\ medidor\r\n
+comment3.params=
+comment3.target=int\ getSerialNumber()
+comment3.text=\r\n\ \r\n\ @return\ El\ serialNumber\ del\ medidor\r\n
+comment4.params=
+comment4.target=int\ getConsumoAcumulado()
+comment4.text=\r\n\ \r\n\ @return\ El\ consumo\ acumulado\ del\ medidor\r\n
+comment5.params=consumo
+comment5.target=void\ incrementarConsumo(int)
+comment5.text=\r\n\ Incrementa\ el\ consumo\ acumulado\ en\ el\ valor\ especificado\r\n\r\n\ @param\ consumo\ El\ valor\ de\ consumo\ a\ incrementar\r\n
+comment6.params=
+comment6.target=TipoMedidor\ getTipoMedidor()
+comment6.text=\r\n\ \r\n\ @return\ El\ Tipo\ de\ Medidor\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ @return\ La\ DESCRIPCION\ del\ Medidor\r\n
+numComments=8

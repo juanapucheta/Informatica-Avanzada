@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Utils
+comment1.params=lectura\ lista
+comment1.target=boolean\ validarLectura(Lectura,\ java.util.List)
+comment1.text=\r\n\ Valida\ una\ lectura\ en\ una\ lista\ de\ lecturas\r\n\ La\ lectura\ es\ valida\ si\ la\ fecha\ es\ posterior\ a\ la\ fecha\ de\ la\ ultima\ lectura\ de\ la\ lista,\r\n\ y\ si\ el\ consumo\ de\ la\ lectura\ es\ mayor\ al\ consumo\ de\ la\ ultima\ lectura\ de\ la\ lista.\r\n\ \r\n\ @param\ lectura\r\n\ @param\ lista\r\n\ @return\ true\ si\ la\ lectura\ es\ valida,\ false\ en\ caso\ contrario\r\n\ \r\n
+comment2.params=lecturas\ desde\ hasta
+comment2.target=java.util.List\ filtrarLecturasPorFecha(java.util.List,\ Fecha,\ Fecha)
+comment2.text=\r\n\ Devuelve\ una\ lista\ con\ las\ lecturas\ comprendidas\ entre\ las\ fechas\ "desde"\ -\ "hasta"\ de\ la\ lista\r\n\ de\ lecturas\ pasadas\ como\ argunmento.\r\n\ Si\ la\ fecha\ "desde"\ es\ null,\ considera\ todas\ las\ lecturas\ hasta\ la\ fecha\ "hasta"\r\n\ Si\ la\ fecha\ "hasta"\ es\ null,\ considera\ todas\ las\ lecturas\ desde\ la\ fecha\ "desde"\r\n\ Si\ ambas\ fechas\ son\ null,\ todas\ las\ fechas\ se\ consideran\ dentro\ del\ periodo\ \r\n\ \r\n\ @param\ lecturas\ la\ lista\ de\ lecturas\ original\r\n\ @param\ desde\ la\ fecha\ desde\ la\ cual\ se\ considera\ el\ periodo\r\n\ @param\ hasta\ la\ fecha\ hasta\ que\ se\ considera\ el\ periodo\r\n\ @return\ la\ lista\ de\ fechas\ incluidas\ en\ el\ periodo.\r\n
+numComments=3
