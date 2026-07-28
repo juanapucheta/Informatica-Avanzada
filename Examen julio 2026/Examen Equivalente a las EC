@@ -1,0 +1,233 @@
+// Implemente getter y setter de la variable especificada
+// 15 / 15
+public class Docente {
+    private int dni;
+    //Constructor
+    public Docente (int dni){
+        this.dni = dni;
+    }
+    /**
+     * si el argumento dni es valido, setea el valor y retorna true
+     * Si el valor es invalido, ignora el valor y retorna false
+     * @param dni. El dni valido debe ser un numero entre 1 y 99999999
+     */
+    public boolean setDni(int dni){
+        //TODO: Implemente el metodo
+        if(dni >= 1 && dni <= 99999999){
+            this.dni = dni;
+            return true;
+        }
+        
+        else{
+            return false;
+        }
+    }
+    /**
+     * Retorna el valor de dni
+     */
+    public int getDni (){
+        //TODO: Implemente el metodo
+        return dni;
+    }
+}
+
+
+////////////////////////////////
+
+// Para la clase especificada, implementar public void marcarComoComprado(String nombre)
+// Nota: Asuma que la clase Item implementa los métodos: public void setComprado(boolean comprado), public String getNombre()
+// 15 / 15
+
+// import java.util.ArrayList;
+
+public class Evaluacion {
+public ArrayList<Item> listaDeCompras;
+
+    public Evaluacion() {
+        listaDeCompras = new ArrayList<Item>();
+    }
+
+    /**
+     * Implementar el metodo de manera que busque el item con el nombre 
+     * indicado en la lista y lo marque como comprado (true)
+     */
+    public void marcarComoComprado(String nombre) {
+        for(Item item : listaDeCompras){
+            if(item.getNombre().equals(nombre)){
+                item.setComprado(true);
+                
+            }
+            
+        }
+    }
+}
+
+////////////////////////////////
+
+// Se tiene la siguiente clase
+// 10 / 10
+
+public class A {
+
+     private static int k = 0;
+
+     private int i;
+
+     public A(int j){
+
+         i = j;
+
+     }
+
+     public void m1(int i) {
+
+         A aux = new A(0);
+
+         aux.m2(i);
+
+         k = k+i+1;
+
+     }
+
+     public void m2(int i) {
+
+         this.i += i;
+
+         i = i*2;
+
+         k = k+i;
+
+     }
+
+ }
+Se ejecutan las siguientes instrucciones:
+
+A a = new A(4);
+
+ a.m2(2);
+
+ a.m2(4);
+
+ a.m1(2);
+
+ 
+Indique el valor que de la variable de clase "k". k = 19
+
+
+////////////////////////////////
+// Una empresa del alquiler de autos posee diferentes alternativas de alquiler para sus clientes. Los tipos de autos están representados en el siguiente enumerado:
+// public enum Auto {  ECONOMICO, MEDIANO, GRANDE, LUJO, LIMUSINA; }
+// Implemente la clase Catalogo y los métodos definidos. Debe contener una colección del tipo HashMap que contenga tipo de auto y precio de alquiler.
+// 15 / 15 
+
+import java.util.HashMap;
+
+public class Catalogo {
+    HashMap <Auto,Integer> catalogo;
+    /**
+     *  Inicializa un HashMap para almacenar todos los autos
+     *  del enumerado y el precio de alquiler. Debe asignar
+     *  precio por defecto 1500
+     **/
+     
+    public Catalogo(){
+        //TODO, Implementar constructor
+        catalogo = new HashMap<Auto, Integer>();
+        for (Auto a : Auto.values()){
+            catalogo.put(a, 1500);
+        }
+    }
+    
+    
+    /**
+     *  Ajusta el precio de alquiler de un auto en particular
+     **/
+    public void setPrecio (Auto a, int precio){
+        catalogo.put(a,precio);
+    }
+    /**
+     *  Retorna el precio de alquiler de un auto en particular
+     **/
+    public int getPrecio(Auto a){
+        return catalogo.get(a);
+    }
+    
+    /**
+     *  Retorna el HashMap Catalogo
+     **/
+    public HashMap<Auto,Integer> getCatalogo(){
+        return catalogo;
+    }
+}
+
+////////////////////////////////
+// Considere el siguiente diagrama de clases, en donde una Escudo es un tipo especial de Armamento que se distingue del resto por su nombre.
+// Codifique la clase tal que extienda de la clase Armamento, e implemente el constructor y el getter del campo nombre
+// 15 / 15 
+//Modifique la definicion de la clase para realizar la herencia 
+public class Escudo extends Armamento {
+	//Defina los atributos necesarios de la clase
+	private String nombre;
+	//Implemente los siguientes metodos
+    /**
+     * Constructor de la clase Escudo.
+     * El nombre es el nombre de la clase.
+     */
+    public Escudo (Integer ataque) {
+	    //TODO Implementar constructor
+	    super(ataque);
+	    nombre = "Escudo";
+    }
+
+    public String getNombre() {
+		//TODO Implementar metodo
+		return nombre;
+    }
+}
+
+////////////////////////////////
+// Dado el siguiente diagrama UML. System.out.println(moviles.getAereos().size());
+// 15 / 15 
+// System.out.println(moviles.getAereos().size());
+public class Transportes {
+    ArrayList<Vehiculo> moviles;
+
+    public Transportes () {
+        moviles = new ArrayList<Vehiculo>();
+    }
+
+    public void addMovil (Vehiculo v) {
+        // TODO implementar
+        moviles.add(v);
+    }
+
+    public ArrayList<Aereo> getAereos () {
+        // TODO implementar
+        ArrayList<Aereo> aereos = new ArrayList<Aereo>();
+        
+        for(Vehiculo v : moviles){
+            if(v.getMedio().equals(Tipo.AEREO)){
+                aereos.add((Aereo) v);
+            }
+            
+        }
+        return aereos;
+    }
+}
+
+
+////////////////////////////////
+// Dado el siguiente diagrama UML. Implemente el constructor y el método toString() de la subclase. Se debe generar la respuesta del ejemplo.
+// Triciclo de Pepe (3 ruedas)
+ // 15 / 15
+public class Triciclo extends Vehiculo {
+    // Completar con los metodos indicados
+    public Triciclo (String propietario){
+        
+        super(3, propietario);
+    }
+    
+    public String toString(){
+        return ("Triciclo de " + this.getPropietario() + " (" + super.toString() + ")");
+    }
+}
