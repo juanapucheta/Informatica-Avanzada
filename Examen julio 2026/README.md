@@ -1,1 +1,3 @@
 Examen evaluado en la segunda mesa de julio de 2026. Fue el examen que realicé yo, la nota es un 100 / 100. Espero que le sea útil. 
+
+Como recomendación personal para esta materia diría que a la hora de responder las consignas copie y pegue en el programa blue j el código dado por el LEV tal cual, complete el código respondiendo la consigna y luego revise en el LEV si funciona y si pasa las pruebas ocultas. No pretenda que funcione el código en el proyecto completo en blue j; el programa nombra diferente a algunas variables o directamente tiene otras clases. Personalmente recomiendo que no pierda tiempo tratando de hacer andar el proyecto completo en blue j. Completar las clases es bastante intuitivo y los nombres de los métodos están dados en las consignas. 
