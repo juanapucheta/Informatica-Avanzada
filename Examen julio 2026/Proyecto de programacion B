@@ -1,0 +1,332 @@
+// Completar la clase EspacioBase:
+// 15 / 15
+public abstract class EspacioBase {
+    protected String nombre;
+    protected int capacidad;
+    protected TipoSector sector;
+
+    /**
+     * Constructor con parámetros
+     * Inicializa las variables de instancia
+     */
+    public EspacioBase(String nombre, int capacidad, TipoSector sector) {
+          this.nombre = nombre; 
+          this.capacidad = capacidad; 
+          this.sector = sector;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+    
+    public int getCapacidad() {
+        return capacidad;
+    }
+    
+    public TipoSector getSector()  {
+        return sector;
+    }
+    
+    /**
+     * Setea la capacidad de la sala
+     * solo si la capacidad es mayor a 0
+     */
+    public void setCapacidad(int capacidad)  {
+        if(capacidad > 0){
+            this.capacidad = capacidad;
+        }
+    }
+    
+    public void setSector(TipoSector sector) { 
+           this.sector = sector;
+    }
+
+    @Override
+    /**
+     * Retorna una representación del Espacio Base como String con el formato
+     * 
+     * "<nombre> (<apacidad> personas, <sector>)"
+     * 
+     *  Ejemplo: 
+     *      lab1 (6 personas, Piso dos)
+     */
+    public String toString() {
+        return this.nombre + " (" + this.capacidad + " personas, " + this.sector + ")";
+    }
+}
+
+
+
+/////////////////////////
+
+// Implemente la Clase Laboratorio 
+// 15 / 15 
+public class Laboratorio extends EspacioBase implements Ocultable{
+    
+    // Constructor
+    public Laboratorio (String nombre, int capacidad, TipoSector sector){
+        super(nombre, capacidad, sector);
+    }
+    
+    // Muestro es mensaje segun si la visibilidad esta oculta o visible.
+    public void ocultar(boolean visible){
+        // Escribo la forma corta de if / else aprovecho que son mensajes cortos. 
+        String estado = visible ? "visible" : "oculto";
+        System.out.println("Laboratorio " + this.getNombre() + " " + estado + " para el sistema de reservas.");
+    }
+}
+
+///////////////////////// 
+// Completa los métodos indicados de la clase Reserva según la documentación 
+// 20 / 20 
+import java.time.LocalDateTime;
+
+public class Reserva {
+    protected EspacioBase espacio;
+    protected Usuario usuario;
+    protected LocalDateTime inicio;
+    protected int duracionHoras;
+
+    public Reserva(EspacioBase espacio, Usuario usuario, LocalDateTime inicio, int duracionHoras) {
+        this.espacio = espacio;
+        this.usuario = usuario;
+        this.inicio = inicio;
+        this.duracionHoras = duracionHoras;
+    }
+
+    public EspacioBase getEspacio() { return espacio; }
+    public Usuario getUsuario() { return usuario; }
+    public LocalDateTime getInicio() { return inicio; }
+    public int getDuracionHoras() { return duracionHoras; }
+    
+    /**
+     * indica si el horario de esta Reserva se superpone con otro horario y duración
+     * pasada como parámetro
+     * 
+     * Por ejemplo, si esta reserva es de 9 a 11,
+     *  otroInicio 10, otrasHoras 1 -> true
+     *  otroInicio 8, otrasHoras 2 -> True
+     *  otroInicio 8, otrasHoras 1 -> false
+     * 
+     */
+    public boolean seSuperpone(LocalDateTime otroInicio, int otrasHoras) {
+      LocalDateTime fin = this.inicio.plusHours(this.duracionHoras);
+      LocalDateTime otroFin = otroInicio.plusHours(otrasHoras);
+      
+      // Si tengo el primer rango [A, B] y otro rango con [C, D], se van a superponer si 
+      // sucede que (A < D) y (C < B). Comparo eso entonces. 
+      
+      return this.inicio.isBefore(otroFin) && otroInicio.isBefore(fin);
+    }
+
+    @Override
+    /**
+     * Retorna un string que represente la Reserva con el formato
+     * "Reserva de <nombre_sala> por <usuario> desde <hora_inicio> por <duracion> horas""     * 
+     * Ej
+     *  Reserva de Uritorco por Juan Perez <jp@mail.com> desde 2025-06-16T10:00 por 1h"
+     */
+     public String toString() {
+       String info = "Reserva de " + this.espacio.getNombre() +
+                    " por " + this.usuario.toString() +
+                    " desde " + this.inicio.toString() +
+                    " por " + this.duracionHoras + "h" ;
+       return info;
+    }
+}
+
+///////////////////////// 
+// Completar los métodos de GestorAulas. 
+// 25 / 25 
+import java.util.*;
+
+public class GestorAulas {
+    private List<EspacioBase> espacios = new ArrayList<>();
+
+   /**
+     * Agrega una Espacio a la lista de Espacios del gestor
+     */
+   public void agregar(EspacioBase espacio) {
+        if(espacio != null){
+            this.espacios.add(espacio);
+        }
+    }
+
+    /**
+     * Elimina de la lista el EspacioBase  cuyo nombre coincide
+     * con el nombre pasado como argumento.
+     */
+     public void eliminar(String nombre) {
+        EspacioBase encontrado = buscar(nombre);
+        
+        if(encontrado != null){
+            this.espacios.remove(encontrado);
+        }
+    }
+
+    /**
+     * Actualiza la capacidad y ubicación del EspacioBase cuyo
+     * nombre coincide con el nombre pasado como argumento.
+     */
+     public void modificar(String nombre, int nuevaCapacidad, TipoSector nuevoSector) {
+        EspacioBase encontrado = buscar(nombre);
+         
+         if(encontrado != null){
+            encontrado.setCapacidad(nuevaCapacidad);
+            encontrado.setSector(nuevoSector);
+            // encontrado.setUbicacion(nuevoSector);
+        }
+    }
+
+    /**
+     * Devuelve el EspacioBase cuyo nombre coincide con el nombre
+     * pasado como argumento
+     */
+    public EspacioBase buscar(String nombre) {
+        for(EspacioBase espacio : this.espacios){
+            if(espacio.getNombre().equals(nombre)){
+                return espacio;
+            }
+        }
+     return null; 
+    }
+
+    /**
+     * Devuelve una lista con todos los EspacioBase del
+     * gestor 
+     */
+    public List<EspacioBase> getTodos(){
+        return new ArrayList<>(this.espacios);
+    }
+}
+
+///////////////////////// 
+// Hay que implementar los siguientes métodos.
+// 25 / 25 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+class GestorReservas {
+    private GestorAulas gestorAulas;
+    protected Map<EspacioBase, List<Reserva>> reservas;
+
+    public GestorReservas(GestorAulas gestorAulas ) {
+        this.gestorAulas = gestorAulas;
+        this.reservas = new HashMap<EspacioBase, List<Reserva>>();
+        for (EspacioBase e : gestorAulas.getTodos()) {
+            reservas.put(e, new ArrayList<>());
+        }
+    }
+
+    
+    public List<Reserva> getReservasPorEspacio (String nombreEspacio){
+        EspacioBase espacio = gestorAulas.buscar(nombreEspacio);
+        List<Reserva> listaReservas=null;
+        if (espacio !=null && reservas.containsKey(espacio)) {
+           listaReservas = reservas.get(espacio);
+        }
+        return listaReservas;
+    }
+
+
+    /**
+     * Reserva una espacio para un usuario, a la hora y con la duración indicada
+     *  
+     * - Si la espacio no existe en el gestor -> Lanza Exception ()
+     * -  Revisa todas las reservas asociadas al espacio, y si existe alguna
+     * que se superpone -> Lanza Exception ()
+     * 
+     * - Si el espacio existe, y no tienen ninguna reserva superpuesta:
+     *        - se genera una nueva Reserva 
+     *        - se agrega al mapa de reservas
+     *        - retorna true
+     * 
+     * @throw Exception si la sala no existe, o si tiene una reserva en el 
+     * horario requerido
+     * @return true si se pudo generar la reserva.
+     * 
+     */
+    public boolean reservar(String nombreEspacio, Usuario usuario, LocalDateTime inicio, int duracion) throws Exception {
+        EspacioBase espacio = gestorAulas.buscar(nombreEspacio);
+        
+        if(espacio == null){
+            throw new Exception();
+        }
+        
+        if(!reservas.containsKey(espacio)){
+            reservas.put(espacio, new ArrayList<>());
+        }
+        
+        // Reviso superposiciones. 
+        for(Reserva r : reservas.get(espacio)){
+            if(r.seSuperpone(inicio, duracion)){
+                throw new Exception();
+            }
+        }
+        
+        Reserva nuevaReserva = new Reserva(espacio, usuario, inicio, duracion);
+        reservas.get(espacio).add(nuevaReserva);
+        return true;
+    }
+
+    /**
+     * Libera el espacio de la reserva agendada a la hora epecificada.
+     * 
+     * - Obitene el Espacio por su nombre del gestor de Aula, si no existe o no tiene
+     * reservas asociadas, no hace nada.
+     * 
+     * - Recorre la lista de reservas del espacio, 
+     *         - si hay alguna reserva que inicie a la hora especificada  la remueve.
+     * 
+     */
+     public void liberar(String nombreEspacio, LocalDateTime inicio) {
+       EspacioBase espacio = gestorAulas.buscar(nombreEspacio);
+       
+       if(espacio != null && reservas.containsKey(espacio)){
+           List<Reserva> lista = reservas.get(espacio);
+           
+           // Solo la remuevo si el horario coincide. 
+           lista.removeIf(reserva -> reserva.getInicio().equals(inicio));
+        }
+    }
+
+    /**
+     * devuevle una lista de todos los espacios DISPONIBLES con una capacidad
+     * mínima y en una ubicación.
+     * 
+     * - Recorre todos los espacios existentes en el GestorAulas
+     *      - de cada espacio obtiene y la lista dereservas y la recorre
+     *      - determina si hay reservas a la hora indicada por el tiempo indicado. 
+     *      - Si no hay reservas, está disponible, agrega el espacio a la lista.
+     * - retorna la lista con salas disponible
+     * 
+     * @return la lista con todas las salas disponbiles.
+     */
+    public List<EspacioBase> disponibles(LocalDateTime inicio, int duracion) {
+       List<EspacioBase> disponibles = new ArrayList<EspacioBase>();
+       List<EspacioBase> todas = gestorAulas.getTodos();
+       
+       for(EspacioBase espacio : todas){
+            boolean libre = true; 
+            if(reservas.containsKey(espacio)){
+                for(Reserva r : reservas.get(espacio)){
+                    if(r.seSuperpone(inicio, duracion)){
+                        libre = false; 
+                        break; 
+                    }
+                }
+            }
+            
+            if(libre){
+                disponibles.add(espacio);
+            }
+        
+        }
+       return disponibles;
+    }
+    
+}
+
